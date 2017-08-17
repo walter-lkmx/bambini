@@ -1,0 +1,184 @@
+// Icons
+// -------------------------
+
+
+[data-icons8]:before,
+.icons8-add-shopping-cart:before,
+.icons8-admin-settings-male:before,
+.icons8-administrator-male:before,
+.icons8-advertising:before,
+.icons8-atm:before,
+.icons8-auction:before,
+.icons8-bank-cards:before,
+.icons8-banknotes:before,
+.icons8-barcode:before,
+.icons8-best-seller:before,
+.icons8-box:before,
+.icons8-buy-upgrade:before,
+.icons8-cash-register:before,
+.icons8-circled-female-user:before,
+.icons8-circled-female-user-2:before,
+.icons8-click---collect:before,
+.icons8-coins:before,
+.icons8-comments:before,
+.icons8-counter:before,
+.icons8-coupon:before,
+.icons8-delete:before,
+.icons8-delete-2:before,
+.icons8-delivery:before,
+.icons8-discount:before,
+.icons8-facebook-like:before,
+.icons8-facebook-messenger:before,
+.icons8-free-shipping:before,
+.icons8-gift:before,
+.icons8-gift-card:before,
+.icons8-google-plus:before,
+.icons8-in-transit:before,
+.icons8-instagram:before,
+.icons8-life-cycle:before,
+.icons8-life-cycle-female:before,
+.icons8-lightweight:before,
+.icons8-like:before,
+.icons8-like-filled:before,
+.icons8-low-price:before,
+.icons8-mastercard:before,
+.icons8-money-bag:before,
+.icons8-move-stock:before,
+.icons8-old-cash-register:before,
+.icons8-one-free:before,
+.icons8-online-money-transfer:before,
+.icons8-online-payment:before,
+.icons8-order-delivered:before,
+.icons8-order-on-the-way:before,
+.icons8-order-shipped:before,
+.icons8-packaging:before,
+.icons8-paid:before,
+.icons8-pay-wall:before,
+.icons8-paycheque:before,
+.icons8-paypal:before,
+.icons8-pinterest:before,
+.icons8-plus:before,
+.icons8-pos-terminal:before,
+.icons8-price-tag:before,
+.icons8-puzzle:before,
+.icons8-qr-code:before,
+.icons8-receipt:before,
+.icons8-remove-tag:before,
+.icons8-restart:before,
+.icons8-return-purchase:before,
+.icons8-scan-stock:before,
+.icons8-search:before,
+.icons8-self-service-kiosk:before,
+.icons8-services:before,
+.icons8-settings:before,
+.icons8-share:before,
+.icons8-share-2:before,
+.icons8-share-3:before,
+.icons8-shipped:before,
+.icons8-shop:before,
+.icons8-shopping-basket-2:before,
+.icons8-shopping-cart:before,
+.icons8-souvenirs:before,
+.icons8-stationery:before,
+.icons8-stripe:before,
+.icons8-support:before,
+.icons8-synchronize:before,
+.icons8-tags:before,
+.icons8-token-card-code:before,
+.icons8-track-order:before,
+.icons8-trash:before,
+.icons8-twitter:before,
+.icons8-visa:before,
+.icons8-whatsapp:before,
+{ @include icons8-font; }
+
+[data-icons8]:before { content: attr(data-icons8); }
+
+.icons8-add-shopping-cart:before { content: $icons8-var-add-shopping-cart; }
+.icons8-admin-settings-male:before { content: $icons8-var-admin-settings-male; }
+.icons8-administrator-male:before { content: $icons8-var-administrator-male; }
+.icons8-advertising:before { content: $icons8-var-advertising; }
+.icons8-atm:before { content: $icons8-var-atm; }
+.icons8-auction:before { content: $icons8-var-auction; }
+.icons8-bank-cards:before { content: $icons8-var-bank-cards; }
+.icons8-banknotes:before { content: $icons8-var-banknotes; }
+.icons8-barcode:before { content: $icons8-var-barcode; }
+.icons8-best-seller:before { content: $icons8-var-best-seller; }
+.icons8-box:before { content: $icons8-var-box; }
+.icons8-buy-upgrade:before { content: $icons8-var-buy-upgrade; }
+.icons8-cash-register:before { content: $icons8-var-cash-register; }
+.icons8-circled-female-user:before { content: $icons8-var-circled-female-user; }
+.icons8-circled-female-user-2:before { content: $icons8-var-circled-female-user-2; }
+.icons8-click---collect:before { content: $icons8-var-click---collect; }
+.icons8-coins:before { content: $icons8-var-coins; }
+.icons8-comments:before { content: $icons8-var-comments; }
+.icons8-counter:before { content: $icons8-var-counter; }
+.icons8-coupon:before { content: $icons8-var-coupon; }
+.icons8-delete:before { content: $icons8-var-delete; }
+.icons8-delete-2:before { content: $icons8-var-delete-2; }
+.icons8-delivery:before { content: $icons8-var-delivery; }
+.icons8-discount:before { content: $icons8-var-discount; }
+.icons8-facebook-like:before { content: $icons8-var-facebook-like; }
+.icons8-facebook-messenger:before { content: $icons8-var-facebook-messenger; }
+.icons8-free-shipping:before { content: $icons8-var-free-shipping; }
+.icons8-gift:before { content: $icons8-var-gift; }
+.icons8-gift-card:before { content: $icons8-var-gift-card; }
+.icons8-google-plus:before { content: $icons8-var-google-plus; }
+.icons8-in-transit:before { content: $icons8-var-in-transit; }
+.icons8-instagram:before { content: $icons8-var-instagram; }
+.icons8-life-cycle:before { content: $icons8-var-life-cycle; }
+.icons8-life-cycle-female:before { content: $icons8-var-life-cycle-female; }
+.icons8-lightweight:before { content: $icons8-var-lightweight; }
+.icons8-like:before { content: $icons8-var-like; }
+.icons8-like-filled:before { content: $icons8-var-like-filled; }
+.icons8-low-price:before { content: $icons8-var-low-price; }
+.icons8-mastercard:before { content: $icons8-var-mastercard; }
+.icons8-money-bag:before { content: $icons8-var-money-bag; }
+.icons8-move-stock:before { content: $icons8-var-move-stock; }
+.icons8-old-cash-register:before { content: $icons8-var-old-cash-register; }
+.icons8-one-free:before { content: $icons8-var-one-free; }
+.icons8-online-money-transfer:before { content: $icons8-var-online-money-transfer; }
+.icons8-online-payment:before { content: $icons8-var-online-payment; }
+.icons8-order-delivered:before { content: $icons8-var-order-delivered; }
+.icons8-order-on-the-way:before { content: $icons8-var-order-on-the-way; }
+.icons8-order-shipped:before { content: $icons8-var-order-shipped; }
+.icons8-packaging:before { content: $icons8-var-packaging; }
+.icons8-paid:before { content: $icons8-var-paid; }
+.icons8-pay-wall:before { content: $icons8-var-pay-wall; }
+.icons8-paycheque:before { content: $icons8-var-paycheque; }
+.icons8-paypal:before { content: $icons8-var-paypal; }
+.icons8-pinterest:before { content: $icons8-var-pinterest; }
+.icons8-plus:before { content: $icons8-var-plus; }
+.icons8-pos-terminal:before { content: $icons8-var-pos-terminal; }
+.icons8-price-tag:before { content: $icons8-var-price-tag; }
+.icons8-puzzle:before { content: $icons8-var-puzzle; }
+.icons8-qr-code:before { content: $icons8-var-qr-code; }
+.icons8-receipt:before { content: $icons8-var-receipt; }
+.icons8-remove-tag:before { content: $icons8-var-remove-tag; }
+.icons8-restart:before { content: $icons8-var-restart; }
+.icons8-return-purchase:before { content: $icons8-var-return-purchase; }
+.icons8-scan-stock:before { content: $icons8-var-scan-stock; }
+.icons8-search:before { content: $icons8-var-search; }
+.icons8-self-service-kiosk:before { content: $icons8-var-self-service-kiosk; }
+.icons8-services:before { content: $icons8-var-services; }
+.icons8-settings:before { content: $icons8-var-settings; }
+.icons8-share:before { content: $icons8-var-share; }
+.icons8-share-2:before { content: $icons8-var-share-2; }
+.icons8-share-3:before { content: $icons8-var-share-3; }
+.icons8-shipped:before { content: $icons8-var-shipped; }
+.icons8-shop:before { content: $icons8-var-shop; }
+.icons8-shopping-basket-2:before { content: $icons8-var-shopping-basket-2; }
+.icons8-shopping-cart:before { content: $icons8-var-shopping-cart; }
+.icons8-souvenirs:before { content: $icons8-var-souvenirs; }
+.icons8-stationery:before { content: $icons8-var-stationery; }
+.icons8-stripe:before { content: $icons8-var-stripe; }
+.icons8-support:before { content: $icons8-var-support; }
+.icons8-synchronize:before { content: $icons8-var-synchronize; }
+.icons8-tags:before { content: $icons8-var-tags; }
+.icons8-token-card-code:before { content: $icons8-var-token-card-code; }
+.icons8-track-order:before { content: $icons8-var-track-order; }
+.icons8-trash:before { content: $icons8-var-trash; }
+.icons8-twitter:before { content: $icons8-var-twitter; }
+.icons8-visa:before { content: $icons8-var-visa; }
+.icons8-whatsapp:before { content: $icons8-var-whatsapp; }
+

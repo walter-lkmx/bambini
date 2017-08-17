@@ -1,0 +1,103 @@
+.home {
+    .wrap {
+        max-width: none;
+        padding: 0;
+    }
+    .welcome {
+        background-image: url('../images/welcome-pattern.svg'), radial-gradient(50% 150%, #efefef 50%, #d5d5d5 100%);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: repeat;
+        overflow: hidden;
+        height: 400px;
+        margin-bottom: $base-margin * 4;
+        .container {
+            max-width: 1280px;
+            padding-left: $base-padding;
+            padding-right: $base-padding;
+            padding-top: $base-padding * 1.5;
+            @extend .vertical-centering;
+            .slider {
+                position: relative;
+                float: left;
+                // padding: $base-padding;
+                box-sizing: border-box;
+                width: 49%;
+                height: 350px;
+                margin-bottom: $base-margin * 4;
+            }
+            .search-box {
+                float: right;
+                box-sizing: border-box;
+                width: 49%;
+                height: 350px;
+                padding: $base-padding;
+                // border: $base-border;
+                // border-color: rgba($brand-dark, .3);
+                // background-color: rgba($brand-dark, .05);
+                margin-bottom: $base-margin * 4;
+                .container {
+                    @include vertical-align;
+                    img {
+                        width: 8rem;
+                        &.first-wave {
+                            margin-bottom: $base-margin * 1.5;
+                            margin-left: 5%;
+                        }
+                        &.second-wave {
+                            margin-left: 30%;
+                            margin-bottom: $base-margin * 1.5;
+                        }
+                    }
+                    h3 {
+                        margin-bottom: $base-margin;
+                        color: $brand-primary;
+                        font-size: $base-font-size * 1.7;
+                        padding-left: $base-padding * 2;
+                        margin-bottom: $base-margin * 2;
+                        line-height: .5;
+                        .first-line {
+                            padding-left: $base-padding * 2;
+                            display: block;
+                            padding-bottom: $base-padding;
+                        }
+                    }
+                    label {
+                        display: none;
+                    }
+                    input {
+                        display: block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 40px;
+                        margin-bottom: $base-margin;
+                        // padding-left: $base-padding * 3;
+                        background-image: url('../images/search.svg');
+                        background-repeat: no-repeat;
+                        background-position: 97% 50%;
+                        background-size: 5%;
+                        border-radius: $base-border-radius * 5;
+                        box-shadow: none;
+                    }
+                    input[type="submit"] {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .featured-products {
+        clear: both;
+        overflow: hidden;
+        margin-bottom: $base-margin * 2;
+        max-width: 1280px;
+        padding: $base-padding;
+        @extend .vertical-centering;
+        h3 {
+            margin-bottom: $base-margin * 2;
+            padding-bottom: $base-padding * 2;
+            text-align: center;
+            color: rgba($brand-dark, .8);
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.sidebar {
+    width: 18%;
+    float: left;
+    display: inline-block;
+    section {
+        font-size: $base-font-size - .2;
+        // border-bottom: $base-border;
+        border-color: rgba($brand-dark, .2);
+        padding-bottom: $base-padding * 1.5;
+        margin-bottom: $base-margin * 1.5;
+        h3 {
+            font-size: $base-font-size * 1.1;
+            font-weight: $base-font-weight-normal;
+            padding-bottom: $base-padding;
+            color: rgba($brand-dark, .5);
+        }
+        ul {
+            li {
+                padding-bottom: $base-padding / 2;
+                a {
+                    &:hover {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+        // Woo searchWidget
+        &.widget_product_search {
+            margin-bottom: 0;
+            form {
+                label {
+                    display: none;
+                    font-size: $base-font-size * 1.1;
+                    font-weight: $base-font-weight-normal;
+                    margin-bottom: $base-padding;
+                    color: rgba($brand-dark, .5);
+                }
+                input[type="search"] {
+                    box-sizing: border-box;
+                    display: block;
+                    width: 100%;
+                    padding: $base-padding * 1.2;
+                    margin-bottom: $base-padding / 2;
+                    border-radius: $base-border-radius;
+                    padding-left: $base-padding * 3;
+                    background-image: url('../images/search.svg');
+                    background-repeat: no-repeat;
+                    background-position: 5% 50%;
+                    background-size: 10%;
+                }
+                input[type="submit"] {
+                    display: none;
+                    @extend .button;
+                    border: 0 !important;
+                    box-shadow: none;
+                    background-color: $brand-grey-light;
+                    color: $brand-dark;
+                    font-weight: $base-font-weight-normal;
+                    &:hover {
+                        background-color: darken($brand-grey-light, 10%);
+                    }
+                }
+            }
+        }
+        // wooCategories
+        &.widget_product_categories {
+            // height: 500px;
+            ul {
+                a.collapse {
+                    margin-top: $base-margin / 4;
+                    display: inline-block;
+                    color: $brand-primary;
+                    font-weight: $base-font-weight-normal;
+                    &:hover {
+                        color: rgba($brand-primary, 10%);
+                    }
+                }
+            }
+            .current-product-categories {
+                margin-bottom: $base-margin * 1;
+                li.current-cat {
+                    font-weight: $base-font-weight-normal;
+                    display: block !important;
+                    a {
+                        color: $brand-primary;
+                        pointer-events: none;
+                    }
+                    .children {
+                        margin-top: $base-margin / 2;
+                        font-weight: $base-font-weight-light;
+                        padding-left: $base-padding;
+                        li {
+                            &:before {
+                                content: "─";
+                                margin-right: $base-margin / 2;
+                            }
+                            a {
+                                pointer-events: auto;
+                                color: $brand-dark;
+                                &:hover {
+                                    color: rgba($brand-primary, 10%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.widget_price_filter {
+            form {
+                .ui-slider {
+                    margin-bottom: $base-margin;
+                    background-color: rgba($brand-dark, .3);
+                    border-radius: $base-border-radius;
+                    height: .3rem;
+                    .ui-slider-range {
+                        background-color: lighten($brand-violet, 20%);
+                        // border: 2px solid;
+                        // border-color: rgba($brand-violet, 1);
+                        height: .3rem;
+                        // top: 0px;
+                    }
+                    .ui-slider-handle {
+                        background-color: rgba($brand-violet, 1);
+                        border-radius: $base-border-radius * 3;
+                        border: 0;
+                        top: -.4em;
+                    }
+                }
+                .price_slider_amount {
+                    .price_label {
+                        .from,
+                        .to {
+                            color: $brand-dark;
+                            font-weight: $base-font-weight-normal;
+                        }
+                    }
+                }
+                button[type="submit"] {
+                    @extend .button;
+                    border: 0 !important;
+                    box-shadow: none;
+                    background-color: $brand-primary;
+                    color: $brand-white;
+                    font-weight: $base-font-weight-normal;
+                    margin-bottom: $base-margin;
+                    &:hover {
+                        background-color: darken($brand-primary, 10%);
+                    }
+                }
+            }
+        }
+        // section :last-child
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

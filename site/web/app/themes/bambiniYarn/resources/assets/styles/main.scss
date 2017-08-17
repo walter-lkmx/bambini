@@ -1,0 +1,40 @@
+@import "common/variables";
+@import "common/mixins";
+@import "icons8/styles";
+// Goolge fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+// Import npm dependencies
+@import "~font-awesome/scss/font-awesome";
+@import "~sass-mediaqueries/media-queries";
+@import "~css-reset-and-normalize-sass/scss/reset-and-normalize";
+@import "~unslider/dist/css/unslider";
+@import "~lightbox2/dist/css/lightbox"; 
+// Common
+@import "common/global";
+// Components
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "components/slider";
+@import "components/jquery-ui-slide";
+@import "components/woocommerce-message";
+@import "components/tables";
+@import "components/loaders";
+// Layouts
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/home";
+@import "layouts/useful-info";
+@import "layouts/posts";
+@import "layouts/products";
+@import "layouts/products-archive";
+@import "layouts/single-product";
+@import "layouts/tinymce";
+@import "layouts/cart";
+@import "layouts/checkout";
+@import "layouts/order-received";
+@import "layouts/my-account";
+

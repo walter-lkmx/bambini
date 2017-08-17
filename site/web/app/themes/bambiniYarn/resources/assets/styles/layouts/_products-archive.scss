@@ -1,0 +1,19 @@
+.post-type-archive-product,
+.tax-product_cat {
+    .page-title {
+        text-align: center;
+        font-size: $base-font-size * 1.5;
+        margin-bottom: $base-margin * 2;
+        margin-top: $base-margin;
+        color: rgba($brand-dark, .5);
+    }
+    .products {
+        width: 80%;
+        float: right;
+        display: inline-block;
+        clear: right;
+    }
+    .useful-info {
+        padding: 0;
+    }
+}

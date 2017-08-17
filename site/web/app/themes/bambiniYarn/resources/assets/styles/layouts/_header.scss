@@ -1,0 +1,92 @@
+header.banner {
+    width: 100%;
+    // background-color: $brand-grey-light;
+    background-image: linear-gradient(to right, $brand-grey-light 50%, $brand-primary 50%);
+    .container {
+        max-width: 1280px;
+        height: 60px;
+        padding: 0 $base-padding;
+        background-image: linear-gradient(to right, $brand-grey-light 20%, $brand-primary 20%);
+        @extend .vertical-centering;
+        .brand {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: $base-margin * 6;
+            background: $brand-grey-light;
+            height: 60px;
+            img {
+                // margin-top: $base-margin - .4;
+                height: 31px;
+                vertical-align: top;
+                padding-top: $base-padding - .3;
+                margin-right: $base-margin;
+            }
+            &:after {
+                display: inline-block;
+                background-image: url('../images/wave.svg');
+                background-repeat: no-repeat;
+                background-position: right;
+                height: 60px;
+                width: 30px;
+                content: "";
+                margin-right: -5px;
+            }
+        }
+        nav {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                color: $brand-white;
+                margin-right: $base-margin;
+                transition: $base-transition;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            &.nav-secondary {
+                float: right;
+                margin-right: $base-margin;
+                margin-top: $base-margin * 1.1;
+                position: relative;
+                a {
+                    &:first-child {
+                        border-right: $base-border;
+                        border-left: $base-border;
+                        border-color: rgba($brand-white, .5);
+                        padding-right: $base-padding * 2;
+                        padding-left: $base-padding * 2;
+                    }
+                    &.cart-info {
+                        font-size: $base-font-size * 1.5;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        i {
+                            vertical-align: middle;
+                        }
+                        .cart-items {
+                            font-size: $base-font-size - .2;
+                            font-weight: $base-font-weight-bold;
+                            color: $brand-violet;
+                            border-radius: $base-border-radius * 5;
+                            background-color: $brand-white;
+                            min-width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 1.3;
+                            right: -15px;
+                            margin-top: -27px;
+                            position: absolute;
+                            padding-right: $base-padding - .7;
+                            padding-left: $base-padding - .7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

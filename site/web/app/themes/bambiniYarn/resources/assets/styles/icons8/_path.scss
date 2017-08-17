@@ -1,0 +1,21 @@
+// Font paths
+// -------------------------
+
+@font-face {
+  font-family: "Bambini";
+  src: url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.eot");
+  src: url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.woff2") format("woff2"),
+       url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.woff") format("woff"),
+       url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.ttf") format("truetype"),
+       url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.svg#Bambini") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Bambini";
+    src: url("../fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.svg#Bambini") format("svg");
+  }
+}
