@@ -41,6 +41,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/woocommerce": "^3.0.7",
     "wpackagist-plugin/smtp-mailer": "^1.0.3",
+    "wpackagist-plugin/woocommerce-product-generator": "^1.1.1",
     "wpackagist-plugin/conekta-payment-gateway": "^2.0.12"
   },
   "require-dev": {
