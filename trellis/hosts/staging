@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-http://bambini.lkmx.io
+138.68.53.11
 
 [web]
-http://bambini.lkmx.io
+138.68.53.11
