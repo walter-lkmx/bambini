@@ -4,7 +4,7 @@
         <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/logo.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
         <nav class="nav-primary">
             {{-- @if (has_nav_menu('primary_navigation')) {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!} @endif --}}
-            <a href="/tienda" title="">Catálogo</a>
+            <a href="/catalogo" title="">Catálogo</a>
             <a href="" title="">Ipsum item</a>
             <a href="" title="">Dolor item</a>
             <a href="" title="">Amet item</a>
