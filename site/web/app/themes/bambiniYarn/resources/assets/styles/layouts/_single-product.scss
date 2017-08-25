@@ -60,6 +60,7 @@
       box-sizing: border-box;
       .product_title {
         margin-bottom: $base-margin * 3;
+        font-size: $base-font-size * 2;
       }
       .woocommerce-product-details__short-description {
         display: none;
@@ -68,6 +69,7 @@
         display: block;
         box-sizing: border-box;
         margin-bottom: $base-margin;
+        width: 60%;
         a {
           color: $brand-primary;
           &:hover {
@@ -110,7 +112,7 @@
         float: right;
         box-sizing: border-box; // margin-top: $base-margin * 4;
         .price {
-          text-align: center;
+          text-align: left;
           font-size: $base-font-size * 1.8;
           color: rgba($brand-dark, .8);
           del {
@@ -145,7 +147,7 @@
         }
         form.cart {
           .quantity {
-            text-align: center;
+            text-align: left;
             margin-bottom: $base-margin;
             padding-bottom: $base-padding;
             padding-top: $base-padding;

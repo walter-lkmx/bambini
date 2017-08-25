@@ -11,6 +11,7 @@
 @import "~lightbox2/dist/css/lightbox"; 
 // Common
 @import "common/global";
+@import "common/effects";
 // Components
 @import "components/buttons";
 @import "components/comments";
@@ -37,4 +38,5 @@
 @import "layouts/checkout";
 @import "layouts/order-received";
 @import "layouts/my-account";
+@import "layouts/nice-menu";
 

@@ -1,0 +1,59 @@
+.nice-menu {
+  position: absolute;
+  background-color: $brand-white;
+  z-index: 11;
+  display: none;
+  width: 25%;
+  // max-height: 300px;
+  // overflow-y: hidden;
+  display: none;
+  padding: $base-padding;
+  box-shadow: 0 8px 50px -6px rgba($brand-grey-purple, .26);
+  @extend .slide-in-elliptic-top-fwd;
+  section {
+    h3 {}
+    ul {
+      li {
+        line-height: 2;
+        a {
+          display: block;
+          font-weight: $base-font-weight-normal;
+          color: $brand-dark;
+          .firstWord {
+            font-weight: $base-font-weight-bold;
+            color: $brand-primary;
+          }
+          &:hover {
+            color: $brand-blue-sky;
+            .firstWord {
+              color: $brand-blue-sky;
+            }
+          }
+        }
+      }
+    }
+    .children {
+      display: none;
+    }
+  }
+  &.active {
+    display: block;
+    .children {
+      // display: block;
+      @extend .slide-in-left;
+      background: $brand-white;
+      border-left: 5px solid;
+      border-color: rgba($brand-dark, 0.3);
+      position: absolute;
+      top: 0;
+      margin-left: $base-margin * 10;
+      padding: $base-padding;
+      width: 300px;
+      height: 94%;
+      box-shadow: 0 8px 50px -6px rgba($brand-grey-purple, .26);
+    }
+  }
+  .collapse {
+    display: none;
+  }
+}

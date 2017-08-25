@@ -9,9 +9,10 @@
     }
     .products {
         width: 80%;
-        float: right;
-        display: inline-block;
-        clear: right;
+        // float: right;
+        @extend .vertical-centering;
+        // display: inline-block;
+        // clear: right;
     }
     .useful-info {
         padding: 0;

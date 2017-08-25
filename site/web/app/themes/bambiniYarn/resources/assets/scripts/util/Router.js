@@ -26,6 +26,7 @@ export default class Router {
     // Fire common init JS
     this.fire('common');
     this.fire('products');
+    this.fire('niceMenu');
 
     // Fire page-specific init JS, and then finalize JS
     document.body.className

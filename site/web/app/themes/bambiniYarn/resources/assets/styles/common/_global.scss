@@ -9,6 +9,7 @@ body {
   background-image: url('../images/body-pattern.svg'), linear-gradient($brand-white, $brand-white);
   background-size: 60%;
   background-position: left; // background-attachment: fixed;
+  line-height: 1.5em;
 }
 
 // Initial visibility
@@ -169,4 +170,11 @@ p {
   div {
     background-color: rgba($brand-dark, .5) !important;
   }
+}
+
+.show {
+  display: inherit;
+}
+.hide {
+  display: none;
 }
