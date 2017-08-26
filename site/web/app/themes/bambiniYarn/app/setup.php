@@ -165,11 +165,6 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 ////////
 
-add_filter( 'query', __NAMESPACE__ . 'fix_ajax_query');
-function fix_ajax_query( $query ) {
-$pattern = '/^\s*(START TRANSACTION|COMMIT|ROLLBACK)/i';
-return preg_match( $pattern, $query ) ? '' : $query;
-}
 
 // Ensure cart contents update when products are added to the cart via AJAX 
 add_filter('add_to_cart_fragments', __NAMESPACE__ . '\\woocommerce_header_add_to_cart_fragment');
