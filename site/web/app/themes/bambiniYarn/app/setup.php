@@ -165,7 +165,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 ////////
 
-add_filter( 'query', __NAMESPACE__ . function( $query ) {
+add_filter( 'query', __NAMESPACE__ . function( $query )) {
     $pattern = '/^\s*(START TRANSACTION|COMMIT|ROLLBACK)/i';
     return preg_match( $pattern, $query ) ? '' : $query;
 }
