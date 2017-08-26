@@ -48,14 +48,14 @@ export default {
     }, 4000);
 
 
-    // $(document).on({
-    //   ajaxStart: function() { $("body.checkout, body.finalizar-comprar").addClass("loading").append("<div class=\"loader-inner ball-pulse\"><div></div><div></div><div></div></div>"); },
-    //   ajaxStop: function() { 
-    //     $("body.checkout").removeClass("loading"); 
-    //     $(".loader-inner").css({
-    //       display: 'none',
-    //     }); 
-    //   },
-    // });
+    $(document).on({
+      ajaxStart: function() { $("body.checkout, body.finalizar-comprar").addClass("loading").append("<div class=\"loader-inner ball-pulse\"><div></div><div></div><div></div></div>"); },
+      ajaxStop: function() { 
+        $("body.checkout").removeClass("loading"); 
+        $(".loader-inner").css({
+          display: 'none',
+        }); 
+      },
+    });
   },
 };
