@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c2aa92b28a62eaa240c4cffe19d0af2",
+    "content-hash": "89f705f50c6ec2a35bda14d4e8fa2136",
     "packages": [
         {
             "name": "composer/installers",
@@ -388,15 +388,15 @@
         },
         {
             "name": "wpackagist-plugin/conekta-payment-gateway",
-            "version": "2.0.13",
+            "version": "dev-trunk",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/conekta-payment-gateway/",
-                "reference": "tags/2.0.13"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/conekta-payment-gateway.2.0.13.zip",
+                "url": "https://downloads.wordpress.org/plugin/conekta-payment-gateway.zip?timestamp=1501778382",
                 "reference": null,
                 "shasum": null
             },
@@ -404,7 +404,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/conekta-payment-gateway/"
+            "homepage": "https://wordpress.org/plugins/conekta-payment-gateway/",
+            "time": "2017-08-03T17:39:42+00:00"
         },
         {
             "name": "wpackagist-plugin/smtp-mailer",
@@ -425,26 +426,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/smtp-mailer/"
-        },
-        {
-            "name": "wpackagist-plugin/woo-mercado-pago-module",
-            "version": "2.2.12",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woo-mercado-pago-module/",
-                "reference": "tags/2.2.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woo-mercado-pago-module.2.2.12.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woo-mercado-pago-module/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",
@@ -569,7 +550,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wpackagist-plugin/conekta-payment-gateway": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
