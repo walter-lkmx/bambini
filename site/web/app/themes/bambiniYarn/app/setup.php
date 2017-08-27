@@ -166,6 +166,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 ////////
 
 
+
 // Ensure cart contents update when products are added to the cart via AJAX 
 add_filter('add_to_cart_fragments', __NAMESPACE__ . '\\woocommerce_header_add_to_cart_fragment');
  
@@ -184,4 +185,5 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
     return $fragments;
     
 }
+
 
