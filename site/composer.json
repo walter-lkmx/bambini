@@ -43,7 +43,7 @@
     "wpackagist-plugin/smtp-mailer": "^1.0.3",
     "wpackagist-plugin/woocommerce-product-generator": "^1.1.1",
     "wpackagist-plugin/conekta-payment-gateway": "^2.0.12",
-    "wpackagist-plugin/woocommerce-gateway-stripe": "3.2.3"
+    "wpackagist-plugin/woo-mercado-pago-module": "^2.2.12"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
