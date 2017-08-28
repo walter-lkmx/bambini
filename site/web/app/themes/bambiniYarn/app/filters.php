@@ -72,4 +72,4 @@ add_filter('comments_template', 'App\\template_path');
 add_filter( 'query', function( $query ) {
     $pattern = '/^\s*(START TRANSACTION|COMMIT|ROLLBACK)/i';
     return preg_match( $pattern, $query ) ? '' : $query;
-},);
+});
