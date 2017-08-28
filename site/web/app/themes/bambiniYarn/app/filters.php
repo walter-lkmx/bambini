@@ -68,9 +68,3 @@ add_filter('template_include', function ($template) {
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
 add_filter('comments_template', 'App\\template_path');
-
-add_filter( 'query', __NAMESPACE__ . 'fix_ajax_query');
-function fix_ajax_query( $query ) {
-$pattern = '/^\s*(START TRANSACTION|COMMIT|ROLLBACK)/i';
-return preg_match( $pattern, $query ) ? '' : $query;
-}
