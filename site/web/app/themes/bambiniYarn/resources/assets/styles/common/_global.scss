@@ -10,6 +10,9 @@ body {
   background-size: 60%;
   background-position: left; // background-attachment: fixed;
   line-height: 1.5em;
+  * {
+    box-sizing: border-box;
+  }
 }
 
 // Initial visibility
@@ -82,6 +85,9 @@ p {
 // Containers
 .wrap {
   max-width: 1280px; // width: 100%;
+  @include mq($max-width: 768px) {
+    margin-top: $base-margin * 3;
+  }
   padding: $base-padding;
   overflow: hidden;
   @extend .vertical-centering;
@@ -175,6 +181,7 @@ p {
 .show {
   display: inherit;
 }
+
 .hide {
   display: none;
 }

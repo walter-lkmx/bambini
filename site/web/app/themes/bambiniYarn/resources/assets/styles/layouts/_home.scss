@@ -11,8 +11,12 @@
     overflow: hidden;
     height: 400px;
     margin-bottom: $base-margin * 4;
+    @include mq($max-width: 375px) {
+      height: 200px;
+    }
     .container {
       max-width: 1280px;
+      width: 100%;
       padding-left: $base-padding;
       padding-right: $base-padding;
       padding-top: $base-padding * 1.5;
@@ -24,12 +28,18 @@
         width: 49%;
         height: 350px;
         margin-bottom: $base-margin * 4;
+        @include mq($max-width: 375px) {
+          height: 150px;
+        }
       }
       .search-box {
         float: right;
         box-sizing: border-box;
         width: 49%;
         height: 350px;
+        @include mq($max-width: 375px) {
+          height: 150px;
+        }
         padding: $base-padding; // border: $base-border;
         // border-color: rgba($brand-dark, .3);
         // background-color: rgba($brand-dark, .05);
@@ -54,10 +64,27 @@
             padding-left: $base-padding * 2;
             margin-bottom: $base-margin * 2;
             line-height: .5;
+            @include mq($max-width: 768px) {
+              line-height: 1;
+            }
+            @include mq($max-width: 375px) {
+              font-size: $base-font-size;
+              padding-left: $base-padding;
+              line-height: 1.2;
+            }
             .first-line {
               padding-left: $base-padding * 2;
               display: block;
               padding-bottom: $base-padding;
+              @include mq($max-width: 768px) {
+                padding-bottom: 0; 
+                padding-left: 0;
+                display: inline;
+              }
+              @include mq($max-width: 375px) {
+                padding-left: 0;
+                display: inline;
+              }
             }
           }
         }

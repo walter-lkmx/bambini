@@ -3,22 +3,31 @@ header.banner {
   background-image: linear-gradient(to right, $brand-grey-light 50%, $brand-primary 50%);
   .container {
     max-width: 1280px;
+    width: 100%;
     height: 60px;
     padding: 0 $base-padding;
     background-image: linear-gradient(to right, $brand-grey-light 20%, $brand-primary 20%);
     @extend .vertical-centering;
+
     .brand {
       display: inline-block;
       vertical-align: middle;
       margin-right: $base-margin * 2;
       background: $brand-grey-light;
       height: 60px;
+      @include mq($max-width: 768px) {
+        margin-right: 0;
+      }
       img {
         // margin-top: $base-margin - .4;
-        height: 31px;
+        height: 45px;
         vertical-align: top;
         padding-top: $base-padding - .3;
         margin-right: $base-margin;
+        @include mq($max-width: 768px) {
+          height: 35px;
+          padding-top: $base-padding;
+        }
       }
       &:after {
         display: inline-block;
@@ -34,22 +43,47 @@ header.banner {
     nav {
       display: inline-block;
       vertical-align: middle;
+
       .menu-toggle {
         text-align: center;
         display: inline-block;
         padding: 9px 10px 0 10px;
         position: absolute;
         top: 0;
+        @include mq($max-width: 768px) {
+          margin-right: 0;
+          padding: 27px 25px 0px 35px;
+        }
+        @include mq($max-width: 375px) {
+          padding: 27px 10px 0 0px;
+        }
         &:hover {
           text-decoration: none;
           background-color: rgba(black, 0.4);
+          @include mq($max-width: 768px) {
+            background-color: transparent;
+          }
+          @include mq($max-width: 375px) {
+            background-color: transparent;
+          }
         }
         img {
           width: 25px;
+          @include mq($max-width: 768px) {
+            width: 20px;
+          }
+          @include mq($max-width: 375px) {
+            width: 20px;
+          }
         }
         span {
           display: block;
-          // padding-top: $base-padding / 2;
+          @include mq($max-width: 768px) {
+            display: none;
+          }
+          @include mq($max-width: 375px) {
+            display: none;
+          }
           font-size: $base-font-size - 0.3;
           font-weight: $base-font-weight-normal;
         }
@@ -84,6 +118,16 @@ header.banner {
         display: inline-block;
         width: 300px;
         margin-left: $base-margin * 7;
+        @include mq($max-width: 768px) {
+          display: block;
+          width: 100%;
+          left: 0;
+          background: $brand-primary;
+          position: absolute;
+          margin-top: 30px;
+          padding: .5rem;
+          margin-left: 0;
+        }
         label {
           display: none;
         }
@@ -96,6 +140,9 @@ header.banner {
           background-repeat: no-repeat;
           background-position: 97% 50%;
           background-size: 8%;
+          @include mq($max-width: 768px) {
+            background-size: 3%;
+          }
           border-radius: 0;
           box-shadow: none;
         }
@@ -108,6 +155,14 @@ header.banner {
         margin-right: $base-margin;
         margin-top: $base-margin * 1.1;
         position: relative;
+        @include mq($max-width: 768px) {
+          margin-right: 0;
+          margin-left: $base-margin * 6;
+          float: none;
+        }
+        @include mq($max-width: 375px) {
+          margin-left: $base-margin * 2;
+        }
         a {
           &:first-child {
             border-right: $base-border;
@@ -115,6 +170,23 @@ header.banner {
             border-color: rgba($brand-white, .5);
             padding-right: $base-padding * 2;
             padding-left: $base-padding * 2;
+            @include mq($max-width: 375px) {
+              padding-right: $base-padding;
+              padding-left: $base-padding;
+            }
+          }
+
+          &.my-accountText {
+            @include mq($max-width: 768px) {
+              display: none;
+            }
+          }
+          &.icon-account {
+            display: none;
+            @include mq($max-width: 768px) {
+              display: inherit;
+              font-size: $base-font-size * 1.5;
+            }
           }
           &.cart-info {
             font-size: $base-font-size * 1.5;

@@ -38,7 +38,28 @@ export default {
       // Oder received: Wrap message and details
       $('.woocommerce-order > .woocommerce-notice, .woocommerce-order > .woocommerce-order-overview').wrapAll('<div class="header-receipt">');
       $(".woocommerce-notice").prepend("<div class=\"badge\"><i class=\"icons8-online-payment\"></i></div>");
+
+      //const truncate = require('truncator-js');
+      
+      const truncate = function(selector, limit) {
+        let element = document.querySelectorAll(selector);
+        if (element) {
+          for (let i = 0; i < element.length; i++) {
+            let trunc = element[i].innerHTML;
+            if (trunc.length > limit) {
+              trunc = trunc.substring(0, limit);
+              trunc = trunc.replace(/\w+$/, '');
+              element[i].innerHTML = trunc + '...';
+            }
+          }
+        }
+      };
+
+      truncate('h2.woocommerce-loop-product__title', 50);
     })
+
+
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
@@ -50,11 +71,11 @@ export default {
 
     $(document).on({
       ajaxStart: function() { $("body.checkout, body.finalizar-comprar").addClass("loading").append("<div class=\"loader-inner ball-pulse\"><div></div><div></div><div></div></div>"); },
-      ajaxStop: function() { 
-        $("body.checkout").removeClass("loading"); 
+      ajaxStop: function() {
+        $("body.checkout").removeClass("loading");
         $(".loader-inner").css({
           display: 'none',
-        }); 
+        });
       },
     });
   },

@@ -2853,6 +2853,10 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+javascript-text-truncate@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/javascript-text-truncate/-/javascript-text-truncate-2.0.1.tgz#34c39c77d00260ba2afb0cc440d1a99b3c4f717b"
+
 jodid25519@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
@@ -4770,9 +4774,9 @@ shallow-clone@^0.1.2:
     lazy-cache "^0.2.3"
     mixin-object "^2.0.1"
 
-shave@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/shave/-/shave-2.0.0.tgz#86477d01743f54254436ad5eb5b605f42e0c88c1"
+shave@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/shave/-/shave-2.0.4.tgz#a149f069f9b35e97e6c6ff0d00093c25874dd654"
 
 shelljs@^0.7.5:
   version "0.7.7"
@@ -5241,6 +5245,10 @@ trim-repeated@^1.0.0:
 truncate-text@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/truncate-text/-/truncate-text-1.0.2.tgz#8a37e58529f10b07c31f325b537e0b4b96761a80"
+
+truncator-js@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/truncator-js/-/truncator-js-0.0.4.tgz#fefcf4661cbd7d96e2371dd9d83c17ee0b55bd0a"
 
 tryit@^1.0.1:
   version "1.0.3"

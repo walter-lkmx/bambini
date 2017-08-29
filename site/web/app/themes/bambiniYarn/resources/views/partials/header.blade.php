@@ -20,7 +20,8 @@
             ?> 
         </nav>
         <nav class="nav-secondary">
-            <a href="/mi-cuenta" title="">Mi cuenta</a>
+            <a class="icon-account" href="/mi-cuenta" title=""><i class="icons8-circled-female-user-2"></i></a>
+            <a class="my-accountText" href="/mi-cuenta" title="">Mi cuenta</a>
              <a class="cart-info" href="<?php echo wc_get_cart_url(); ?>" title=""><i class="icons8-shopping-cart"></i>
             <span class="cart-items"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </span>
             </a>  

@@ -1,296 +1,294 @@
-.my-account {
-    .page-header {
-        display: initial;
-        width: 80%;
-        display: inline-block;
-        float: right;
-        clear: right;
-        h1 {
-            font-size: $base-font-size * 1.2;
-            background-color: $brand-primary;
-            color: $brand-white;
-            display: inline-block;
-            padding: $base-padding;
-            position: absolute;
-            border-radius: 0 0 $base-border-radius 0;
-        }
+.my-account,
+.mi-cuenta {
+  .page-header {
+    display: initial;
+    width: 80%;
+    display: inline-block;
+    float: right;
+    clear: right;
+    h1 {
+      font-size: $base-font-size * 1.2;
+      background-color: $brand-primary;
+      color: $brand-white;
+      display: inline-block;
+      padding: $base-padding;
+      position: absolute;
+      border-radius: 0 0 $base-border-radius 0;
     }
-    // at login
+  } // at login
+  .woocommerce {
+    width: 60%;
+    overflow: hidden;
+    border: $base-border;
+    border-color: rgba($brand-dark, .2);
+    padding: $base-padding * 2;
+    padding-top: $base-padding * 4;
+    box-sizing: border-box;
+    @extend .vertical-centering;
+    h2 {
+      font-size: $base-font-size * 1.3;
+    }
+    p.form-row {
+      display: inline-block;
+      margin-right: $base-margin;
+      &:nth-child(3) {
+        display: block;
+        input {
+          width: auto !important;
+        }
+      }
+      label {
+        display: block;
+        max-width: 250px;
+        margin-bottom: $base-margin / 2;
+      }
+      input[type="submit"] {
+        background-color: $brand-primary;
+        color: $brand-white;
+        box-shadow: none !important;
+        font-size: $base-font-size;
+        font-weight: $base-font-weight-normal;
+        padding-top: $base-padding - .2;
+        padding-bottom: $base-padding * 2;
+        display: block;
+        width: 100%;
+        border: 0 !important;
+        margin-bottom: $base-margin;
+        &:hover {
+          background-color: darken($brand-primary, 10%);
+        }
+      }
+      input[type="checkbox"] {
+        height: 1rem;
+      }
+      &#billing_country_field {
+        display: block;
+      }
+    }
+    .lost_password {
+      a {
+        &:hover {
+          color: $brand-primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  } // at every view after login
+  &.logged-in {
+    // reset for previus .woocommerce attributes
     .woocommerce {
-        width: 60%;
-        overflow: hidden;
-        border: $base-border;
-        border-color: rgba($brand-dark, .2);
-        padding: $base-padding * 2;
-        padding-top: $base-padding * 4;
-        box-sizing: border-box;
-        @extend .vertical-centering;
+      width: auto;
+      border: 0;
+      padding: 0;
+    }
+    nav.woocommerce-MyAccount-navigation {
+      width: 20%;
+      display: inline-block;
+      float: left;
+      padding: $base-padding;
+      box-sizing: border-box;
+      ul {
+        li {
+          padding-bottom: $base-padding;
+          margin-bottom: $base-margin;
+          &.is-active {
+            border-bottom: $base-border;
+            border-color: $brand-primary;
+          }
+          a {
+            display: block;
+            &:hover {
+              color: $brand-primary;
+            }
+          }
+          &.woocommerce-MyAccount-navigation-link--customer-logout {
+            a {
+              color: $brand-pink;
+            }
+          }
+        }
+      }
+    }
+    .woocommerce-MyAccount-content {
+      min-height: 300px;
+      width: 80%;
+      display: inline-block;
+      float: left;
+      margin-bottom: $base-margin * 4;
+      overflow: hidden;
+      border: $base-border;
+      border-color: rgba($brand-dark, .2);
+      padding: $base-padding * 2;
+      padding-top: $base-padding * 4;
+      box-sizing: border-box;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+      mark {
+        background-color: $brand-secondary; // color: $brand-white;
+        // font-weight: $base-font-weight-bold;
+        padding-left: $base-padding / 2;
+        padding-right: $base-padding / 2;
+      }
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            td {
+              a.button {
+                background-color: $brand-violet;
+                text-decoration: none;
+                &:hover {
+                  background-color: darken($brand-violet, 10%);
+                  color: $brand-white;
+                }
+              }
+            }
+          }
+        }
+        tfoot {
+          th {
+            text-align: right;
+            padding-right: $base-padding;
+            padding-bottom: $base-padding / 2;
+            padding-top: $base-padding / 2;
+          }
+          td {}
+        }
+      }
+      .woocommerce-order-details {
         h2 {
+          margin-bottom: $base-margin;
+          font-size: $base-font-size * 1.3;
+        }
+      }
+      .woocommerce-columns--addresses,
+      .woocommerce-Addresses {
+        word-wrap: break-word;
+        a {
+          display: block;
+          text-decoration: none;
+          display: inline-block;
+          margin-bottom: $base-margin;
+          float: right;
+          @extend .button;
+          background-color: $brand-yellow;
+          &:hover {
+            color: $brand-white;
+            background-color: darken($brand-yellow, 10%);
+          }
+        }
+        h3 {
+          font-size: $base-font-size * 1.3;
+          margin-bottom: $base-margin;
+        }
+        .customer_details,
+        address {
+          margin-bottom: $base-margin * 2;
+          @include mq($max-width: 768px) {
+            margin-left: 0;
+          }
+          color: rgba($brand-dark, .8);
+          br {
+            line-height: 1.5rem;
+            border-bottom: $base-border;
+            border-color: red;
+            display: block;
+          }
+        }
+        .woocommerce-column--1,
+        .col-1 {
+          margin-top: $base-margin * 2;
+          width: 45%;
+          float: left;
+        }
+        .woocommerce-column--2,
+        .col-2 {
+          margin-top: $base-margin * 2;
+          width: 45%;
+          float: right;
+        }
+      }
+      form.woocommerce-EditAccountForm,
+      form.woocommerce-ResetPassword,
+      form.woocommerce-form-login,
+      form.register,
+      .woocommerce-address-fields {
+        fieldset {
+          margin-top: $base-margin * 2;
+          legend {
             font-size: $base-font-size * 1.3;
+          }
+          p.form-row {
+            display: inline-block !important;
+            label {
+              max-width: 250px;
+              margin-bottom: $base-margin / 2;
+            }
+          }
         }
         p.form-row {
-            display: inline-block;
-            margin-right: $base-margin;
-            &:nth-child(3) {
-                display: block;
-                input {
-                    width: auto !important;
-                }
+          display: inline-block;
+          margin-right: $base-margin;
+          &:nth-child(3) {
+            display: block;
+            input {
+              width: auto !important;
             }
-            label {
-                display: block;
-                max-width: 250px;
-                margin-bottom: $base-margin / 2;
+          }
+          label {
+            display: block;
+          }
+          input[type="submit"] {
+            background-color: $brand-primary;
+            color: $brand-white;
+            box-shadow: none !important;
+            font-size: $base-font-size;
+            font-weight: $base-font-weight-normal;
+            padding-top: $base-padding - .2;
+            padding-bottom: $base-padding * 2;
+            display: block;
+            width: 100%;
+            border: 0 !important;
+            margin-bottom: $base-margin;
+            &:hover {
+              background-color: darken($brand-primary, 10%);
             }
-            input[type="submit"] {
-                background-color: $brand-primary;
-                color: $brand-white;
-                box-shadow: none !important;
-                font-size: $base-font-size;
-                font-weight: $base-font-weight-normal;
-                padding-top: $base-padding - .2;
-                padding-bottom: $base-padding * 2;
-                display: block;
-                width: 100%;
-                border: 0 !important;
-                margin-bottom: $base-margin;
-                &:hover {
-                    background-color: darken($brand-primary, 10%);
-                }
-            }
-            input[type="checkbox"] {
-                height: 1rem;
-            }
-            &#billing_country_field {
-                display: block;
-            }
+          }
+          input[type="checkbox"] {
+            height: 1rem;
+          }
+          &#billing_country_field {
+            display: block;
+          }
         }
-        .lost_password {
-            a {
-                &:hover {
-                    color: $brand-primary;
-                    text-decoration: underline;
-                }
-            }
+        .woocommerce-Button,
+        .button {
+          background-color: $brand-primary;
+          color: $brand-white;
+          box-shadow: none !important;
+          font-size: $base-font-size;
+          font-weight: $base-font-weight-normal;
+          padding-top: $base-padding - .2;
+          padding-bottom: $base-padding * 2;
+          display: block;
+          width: auto;
+          border: 0 !important;
+          margin-bottom: $base-margin;
+          &:hover {
+            background-color: darken($brand-primary, 10%);
+          }
         }
+        .woocomerce-FormRow {
+          display: block !important;
+          input {
+            width: auto !important;
+          }
+        }
+      }
     }
-    // at every view after login
-    &.logged-in {
-        // reset for previus .woocommerce attributes
-        .woocommerce {
-            width: auto;
-            border: 0;
-            padding: 0;
-        }
-        nav.woocommerce-MyAccount-navigation {
-            width: 20%;
-            display: inline-block;
-            float: left;
-            padding: $base-padding;
-            box-sizing: border-box;
-            ul {
-                li {
-                    padding-bottom: $base-padding;
-                    margin-bottom: $base-margin;
-                    &.is-active {
-                        border-bottom: $base-border;
-                        border-color: $brand-primary;
-                    }
-                    a {
-                        display: block;
-                        &:hover {
-                            color: $brand-primary;
-                        }
-                    }
-                    &.woocommerce-MyAccount-navigation-link--customer-logout {
-                        a {
-                            color: $brand-pink;
-                        }
-                    }
-                }
-            }
-        }
-        .woocommerce-MyAccount-content {
-            min-height: 300px;
-            width: 80%;
-            display: inline-block;
-            float: left;
-            margin-bottom: $base-margin * 4;
-            overflow: hidden;
-            border: $base-border;
-            border-color: rgba($brand-dark, .2);
-            padding: $base-padding * 2;
-            padding-top: $base-padding * 4;
-            box-sizing: border-box;
-            a {
-                text-decoration: underline;
-                &:hover {
-                    color: $brand-primary;
-                }
-            }
-            mark {
-                background-color: $brand-secondary;
-                // color: $brand-white;
-                // font-weight: $base-font-weight-bold;
-                padding-left: $base-padding / 2;
-                padding-right: $base-padding / 2;
-            }
-            table {
-                width: 100%;
-                tbody {
-                    tr {
-                        td {
-                            a.button {
-                                background-color: $brand-violet;
-                                text-decoration: none;
-                                &:hover {
-                                    background-color: darken($brand-violet, 10%);
-                                    color: $brand-white;
-                                }
-                            }
-                        }
-                    }
-                }
-                tfoot {
-                    th {
-                        text-align: right;
-                        padding-right: $base-padding;
-                        padding-bottom: $base-padding / 2;
-                        padding-top: $base-padding / 2;
-                    }
-                    td {}
-                }
-            }
-            .woocommerce-order-details {
-                h2 {
-                    margin-bottom: $base-margin;
-                    font-size: $base-font-size * 1.3;
-                }
-            }
-            .woocommerce-columns--addresses,
-            .woocommerce-Addresses {
-                word-wrap: break-word;
-                a {
-                    display: block;
-                    text-decoration: none;
-                    display: inline-block;
-                    margin-bottom: $base-margin;
-                    float: right;
-                    @extend .button;
-                    background-color: $brand-yellow;
-                    &:hover {
-                        color: $brand-white;
-                        background-color: darken($brand-yellow, 10%);
-                    }
-                }
-                h3 {
-                    font-size: $base-font-size * 1.3;
-                    margin-bottom: $base-margin;
-                }
-                .customer_details,
-                address {
-                    margin-bottom: $base-margin * 2;
-                    @include mq($max-width: 768px) {
-                        margin-left: 0;
-                    }
-                    color: rgba($brand-dark, .8);
-                    br {
-                        line-height: 1.5rem;
-                        border-bottom: $base-border;
-                        border-color: red;
-                        display: block;
-                    }
-                }
-                .woocommerce-column--1,
-                .col-1 {
-                    margin-top: $base-margin * 2;
-                    width: 45%;
-                    float: left;
-                }
-                .woocommerce-column--2,
-                .col-2 {
-                    margin-top: $base-margin * 2;
-                    width: 45%;
-                    float: right;
-                }
-            }
-            form.woocommerce-EditAccountForm,
-            form.woocommerce-ResetPassword,
-            form.woocommerce-form-login,
-            form.register,
-            .woocommerce-address-fields {
-                fieldset {
-                    margin-top: $base-margin * 2;
-                    legend {
-                        font-size: $base-font-size * 1.3;
-                    }
-                    p.form-row {
-                        display: inline-block !important;
-                        label {
-                            max-width: 250px;
-                            margin-bottom: $base-margin / 2;
-                        }
-                    }
-                }
-                p.form-row {
-                    display: inline-block;
-                    margin-right: $base-margin;
-                    &:nth-child(3) {
-                        display: block;
-                        input {
-                            width: auto !important;
-                        }
-                    }
-                    label {
-                        display: block;
-                    }
-                    input[type="submit"] {
-                        background-color: $brand-primary;
-                        color: $brand-white;
-                        box-shadow: none !important;
-                        font-size: $base-font-size;
-                        font-weight: $base-font-weight-normal;
-                        padding-top: $base-padding - .2;
-                        padding-bottom: $base-padding * 2;
-                        display: block;
-                        width: 100%;
-                        border: 0 !important;
-                        margin-bottom: $base-margin;
-                        &:hover {
-                            background-color: darken($brand-primary, 10%);
-                        }
-                    }
-                    input[type="checkbox"] {
-                        height: 1rem;
-                    }
-                    &#billing_country_field {
-                        display: block;
-                    }
-                }
-                .woocommerce-Button,
-                .button {
-                    background-color: $brand-primary;
-                    color: $brand-white;
-                    box-shadow: none !important;
-                    font-size: $base-font-size;
-                    font-weight: $base-font-weight-normal;
-                    padding-top: $base-padding - .2;
-                    padding-bottom: $base-padding * 2;
-                    display: block;
-                    width: auto;
-                    border: 0 !important;
-                    margin-bottom: $base-margin;
-                    &:hover {
-                        background-color: darken($brand-primary, 10%);
-                    }
-                }
-                .woocomerce-FormRow {
-                    display: block !important;
-                    input {
-                        width: auto !important;
-                    }
-                }
-            }
-        }
-    }
+  }
 }

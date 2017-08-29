@@ -1,9 +1,8 @@
 /** import external dependencies */
 import 'jquery';
 import 'unslider';
-import 'truncate-text';
 import 'lightbox2';
-import 'jquery.nicescroll';
+//import 'truncator-js';
 
 /** import local dependencies */
 import Router from './util/Router';

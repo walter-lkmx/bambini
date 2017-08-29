@@ -66,11 +66,9 @@
     "fancybox": "^3.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "1.12.4 - 3",
-    "jquery.nicescroll": "^3.7.6",
     "lightbox2": "^2.9.0",
     "sass-mediaqueries": "^1.6.1",
-    "shave": "^2.0.0",
-    "truncate-text": "^1.0.2",
+    "truncator-js": "^0.0.4",
     "unslider": "^2.0.3"
   }
 }

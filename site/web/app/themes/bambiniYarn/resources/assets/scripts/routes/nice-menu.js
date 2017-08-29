@@ -23,7 +23,7 @@ export default {
       if ($(this).find('.children').length !== 0) {
         e.preventDefault();
         $(this).find(".children:first").toggle();
-      } else {
+      } else { 
         $(".children").css({ "display": "none" });
       }
     });
@@ -33,12 +33,5 @@ export default {
     $('.menu-toggle').click(function() {
       $('li > .children').hide();
     });
-
-    // nicescroll on niceMenu
-    // $(".nice-menu").niceScroll({
-    //   // cursorcolor: "aquamarine",
-    // });
-
-    // $(".nice-menu > section > ul > li.cat-item").children('.children').css({"display": "block"});
   },
 };

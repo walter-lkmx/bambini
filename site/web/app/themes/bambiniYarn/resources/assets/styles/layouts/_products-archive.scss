@@ -9,6 +9,9 @@
     }
     .products {
         width: 80%;
+        @include mq($max-width: 375px) {
+            width: 100%;
+        }
         // float: right;
         @extend .vertical-centering;
         // display: inline-block;

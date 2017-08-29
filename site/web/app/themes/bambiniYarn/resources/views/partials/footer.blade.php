@@ -18,7 +18,7 @@ var Tawk_API = Tawk_API || {},
 <footer class="content-info">
     <div class="container">
         {{-- @php(dynamic_sidebar('sidebar-footer')) --}}
-        <ul>
+        <ul class="logo">
             <li>
                 <a class="brand" href="{{ home_url('/') }}">
                     <img src="@asset('images/logo-inverted.svg')" alt="{{ get_bloginfo('name', 'display') }}">

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "45465032022bcfa298a0fd12a224b53a",
+    "content-hash": "cdf6c2560f3d9fde3aecd2f1ad2a468a",
     "packages": [
         {
             "name": "composer/installers",
@@ -387,26 +387,6 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
-            "name": "wpackagist-plugin/conekta-payment-gateway",
-            "version": "2.0.13",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/conekta-payment-gateway/",
-                "reference": "tags/2.0.13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/conekta-payment-gateway.2.0.13.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/conekta-payment-gateway/"
-        },
-        {
             "name": "wpackagist-plugin/smtp-mailer",
             "version": "1.0.3",
             "source": {
@@ -447,16 +427,16 @@
             "homepage": "https://wordpress.org/plugins/woocommerce/"
         },
         {
-            "name": "wpackagist-plugin/woocommerce-product-generator",
-            "version": "1.1.1",
+            "name": "wpackagist-plugin/woocommerce-gateway-paypal-express-checkout",
+            "version": "1.4.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woocommerce-product-generator/",
-                "reference": "tags/1.1.1"
+                "url": "https://plugins.svn.wordpress.org/woocommerce-gateway-paypal-express-checkout/",
+                "reference": "tags/1.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-product-generator.1.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-gateway-paypal-express-checkout.1.4.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -464,7 +444,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woocommerce-product-generator/"
+            "homepage": "https://wordpress.org/plugins/woocommerce-gateway-paypal-express-checkout/"
         }
     ],
     "packages-dev": [
