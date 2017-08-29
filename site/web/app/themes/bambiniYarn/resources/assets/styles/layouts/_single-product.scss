@@ -80,7 +80,7 @@
         display: none;
       }
       .product_meta {
-        display: none;
+        // display: none;
         box-sizing: border-box;
         margin-bottom: $base-margin;
         width: 60%;
@@ -115,7 +115,8 @@
         padding-bottom: $base-padding * 2;
         padding-right: $base-padding * 2;
         .description_tab,
-        .reviews_tab {
+        .reviews_tab,
+        .additional_information_tab {
           display: none;
         }
         #tab-description {
