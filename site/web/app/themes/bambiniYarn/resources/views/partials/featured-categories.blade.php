@@ -2,7 +2,7 @@
     <h3>Categoría destacada</h3>
     <ul>
         <?php
-          echo do_shortcode('[product_category category="strollers" per_page="8"]');
+          echo do_shortcode('[product_category category="bodysuits" per_page="8"]');
        ?>
     </ul>
 </div>
