@@ -18,7 +18,7 @@ export default {
 
     $('.children > li.cat-item > a').each(function() {
       var firstWord = $(this);
-      firstWord.html(firstWord.html().replace(/^(\w+)/, '<span class="firstWord">$1</span>'));
+      firstWord.html(firstWord.html().replace(/^(\S+)/, '<span class="firstWord">$1</span>'));
     });
 
     // menu children elements
