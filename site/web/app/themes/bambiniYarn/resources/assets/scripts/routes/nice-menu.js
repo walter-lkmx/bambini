@@ -7,6 +7,9 @@ export default {
       $(this).toggleClass('menu-close');
     });
 
+    // fix for not logged user
+    $('.nice-menu > section').removeClass('woocommerce');
+
     // Highlight first word
     $('.nice-menu > section > ul > li.cat-item > a').each(function() {
       var firstWord = $(this);
@@ -23,6 +26,8 @@ export default {
       if ($(this).find('.children').length !== 0) {
         e.preventDefault();
         $(this).find(".children:first").toggle();
+        $(this).siblings().find(".children").hide();
+        // $(this).find(".children:first").show();
       } else { 
         $(".children").css({ "display": "none" });
       }
