@@ -16,24 +16,6 @@ export default {
           next: '<a class="unslider-arrow next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>',
         },
       });
-      // Sidebar show/hide
-      // var collapseCategories = 20;
-      // $(".product-categories > .cat-item").slice(collapseCategories).hide();
-      // $(".product-categories").append("<a class=\"collapse\">[ + ] Ver más</a>");
-      // $(".collapse").toggle(
-      //   function() {
-      //     $(".product-categories > .cat-item").slice(collapseCategories).show('slow');
-      //     $(this).html("<a class=\"collapse\">[ - ] Ver menos</a>");
-      //   },
-      //   function() {
-      //     $(".product-categories > .cat-item").slice(collapseCategories).hide('slow');
-      //     $(this).html("<a class=\"collapse\">[ + ] Ver más</a>");
-      //   }
-      // );
-      // // Display current category in first position
-      // $('ul.product-categories').find('li.current-cat').prependTo('section.widget_product_categories').wrap("<ul class=\"current-product-categories\"></ul>");
-      // // Adding title to current category
-      // $('.current-product-categories').prepend('<h3>Navegando en<\/h3>');
 
       // Oder received: Wrap message and details
       $('.woocommerce-order > .woocommerce-notice, .woocommerce-order > .woocommerce-order-overview').wrapAll('<div class="header-receipt">');
@@ -56,6 +38,9 @@ export default {
       };
 
       truncate('h2.woocommerce-loop-product__title', 50);
+
+      $("ul.products > li.product > a > img").wrap('<div class="img-wrapper">')
+
     })
 
 

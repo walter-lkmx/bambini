@@ -63,11 +63,14 @@ ul.products {
       overflow: hidden;
       @extend .vertical-centering;
     }
-    img {
-      @extend .vertical-centering;
-      width: 70%;
-      height: 70%;
-      margin-bottom: $base-margin;
+    .img-wrapper {
+      height: 200px;
+      img {
+        @extend .vertical-centering;
+        width: auto;
+        height: 80%;
+        margin-bottom: $base-margin;
+      }
     } // on sale badge
     .onsale {
       color: $brand-dark;
