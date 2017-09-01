@@ -41,7 +41,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/woocommerce": "^3.0.7",
     "wpackagist-plugin/smtp-mailer": "^1.0.3",
-    "wpackagist-plugin/woocommerce-gateway-paypal-express-checkout": "^1.4.3"
+    "wpackagist-plugin/woo-extra-flat-rate": "^3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
