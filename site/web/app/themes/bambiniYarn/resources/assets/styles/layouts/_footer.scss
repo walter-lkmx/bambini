@@ -1,5 +1,5 @@
 footer {
-  background-image: radial-gradient(60% 150%, rgba($brand-primary, .6) 60%, rgba($brand-violet, 1) 110%), linear-gradient($brand-violet, $brand-violet); // background: $brand-violet;
+  background-color: $brand-primary; // background: $brand-violet;
   overflow: hidden;
   clear: both;
   padding: $base-padding;

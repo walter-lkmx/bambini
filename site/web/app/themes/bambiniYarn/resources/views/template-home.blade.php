@@ -13,8 +13,9 @@
             @include('partials.search-box')
         </div>
     </div>
-    @include('partials.featured-products')
-    @include('partials.featured-categories')
+    @include('partials.featured-recommended')
+    @include('partials.featured-popular')
+    @include('partials.featured-trending')
     @include('partials.useful-info')
     @include('partials.content-page')
   @endwhile

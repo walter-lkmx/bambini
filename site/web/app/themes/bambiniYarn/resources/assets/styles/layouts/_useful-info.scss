@@ -8,7 +8,8 @@
   .container {
     display: inline-block;
     float: left;
-    width: calc(32%);
+    //width: calc(32%);
+    width: 100%;
     margin-right: 2%;
     @include mq($max-width: 768px) {
       height: 130px;
@@ -30,6 +31,12 @@
     &:last-child {
       float: right;
       margin-right: 0;
+      background-color: $brand-blue-sky;
+      padding: 26px;
+      h1 {
+        color: $brand-white;
+        line-height: 3rem;
+      }
     }
   }
 }

@@ -62,6 +62,9 @@ ul.products {
       max-height: 48px;
       overflow: hidden;
       @extend .vertical-centering;
+      &:hover {
+        color: $brand-primary;
+      }
     }
     .img-wrapper {
       height: 200px;
@@ -134,9 +137,11 @@ ul.products {
         display: block;
       }
       &.product_type_simple {
-        background-color: $brand-primary;
+        background-color: $brand-gray;
+        //background-color: $brand-primary;
         &:hover {
-          background-color: darken($brand-primary, 10%);
+          //background-color: darken($brand-primary, 10%);
+          background-color: $brand-primary;
         }
       }
       &.product_type_variable {

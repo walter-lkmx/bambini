@@ -40,10 +40,14 @@ header.banner {
         margin-right: -5px;
       }
     }
+    .nav-primary {
+        @include mq($min-width: 820px) {
+          width: 50%;
+        }
+    }
     nav {
       display: inline-block;
       vertical-align: middle;
-
       .menu-toggle {
         text-align: center;
         display: inline-block;
@@ -116,7 +120,8 @@ header.banner {
       }
       .woocommerce-product-search {
         display: inline-block;
-        width: 300px;
+        width: 100%;
+        //width: 300px;
         margin-left: $base-margin * 7;
         @include mq($max-width: 768px) {
           display: block;
@@ -139,7 +144,8 @@ header.banner {
           background-image: url('../images/search.svg');
           background-repeat: no-repeat;
           background-position: 97% 50%;
-          background-size: 8%;
+          background-size: 4%;
+          //background-size: 4%;
           @include mq($max-width: 768px) {
             background-size: 3%;
           }

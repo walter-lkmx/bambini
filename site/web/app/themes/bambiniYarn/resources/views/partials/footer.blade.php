@@ -27,14 +27,15 @@ var Tawk_API = Tawk_API || {},
         </ul>
         <ul>
             <li>Tu pedido</li>
-            <li>Rastrear mi pedido</li>
+            <!--<li>Rastrear mi pedido</li>-->
             <li>Regresa tu pedido</li>
-            <li>Envíos y entregas</li>
+            <!--<li>Envíos y entregas</li>-->
+            <li>Facturación</li>
         </ul>
         <ul>
             <li>Ayuda</li>
             <li>Centro de ayuda</li>
-            <li>Formas de pago</li>
+            <!--<li>Formas de pago</li>-->
             <li>Contacto</li>
         </ul>
         <ul>
@@ -45,6 +46,8 @@ var Tawk_API = Tawk_API || {},
         <ul class="social">
             <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
             <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+            <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
             <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
         </ul>
     </div>

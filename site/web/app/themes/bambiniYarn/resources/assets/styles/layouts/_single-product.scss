@@ -199,11 +199,13 @@
           button {
             @extend .button;
             background-color: $brand-primary;
+            //background-color: $brand-gray;
             border: 0;
             box-shadow: none;
             width: 100%;
             &:hover {
               background-color: darken($brand-primary, 10%);
+              //background-color: $brand-primary;
             }
           }
         }
