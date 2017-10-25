@@ -31,15 +31,15 @@
       padding: $base-padding;
       border-radius: $base-border-radius;
       border: $base-border;
-      border-color: $brand-yellow;
-      background: rgba($brand-yellow, .1);
+      border-color: $brand-blue-sky;
+      background: rgba($brand-blue-sky, .2);
       li {
         margin-bottom: $base-margin / 2;
         &:last-child {
           margin-bottom: 0;
         }
         strong {
-          color: $brand-yellow;
+          color: $brand-blue-sky;
         }
       }
     }
