@@ -11,4 +11,11 @@
           echo do_shortcode('[product_tag tags="te-recomendamos" per_page="4"]');
     ?>
 
+</div> 
+<div class="featured-products">
+    <h3>Tendencias</h3>
+    <?php
+          echo do_shortcode('[product_tag tags="tendencias" per_page="4"]');
+    ?>
+
 </div>

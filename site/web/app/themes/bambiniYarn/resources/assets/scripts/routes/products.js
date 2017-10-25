@@ -84,6 +84,15 @@ export default {
 
             $(".woocommerce-product-gallery, .container-info").wrapAll('<div class="product-container"></div>');
 
+            // adding wave below product title in single view
+            // $(".container-info > .product_title").css('color', 'red');
+            $(".container-info > .product_title").after( "<div class=\"wave-trick\"></div>" );
+
+
+            $(".header-receipt").after( "<div class=\"thanks\">loremfjdskfhbfdsjkhf</div>" );
+            // $('.thanks').delay(2000).show(0);
+            $('.thanks').delay(6000).hide(0);
+
             // change arrangement
             $(".product_meta").insertBefore('.tabs-add');
 

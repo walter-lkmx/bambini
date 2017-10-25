@@ -6,7 +6,8 @@
   padding: $base-padding;
   position: relative;
   // background-color: $brand-blue-sky;
-  background-image: url('../images/body-pattern.svg'), linear-gradient($brand-blue-sky, $brand-blue-sky);
+  background-image: url('../images/banner.svg');
+  background-size: cover; 
   @extend .vertical-centering;
 
   .container {
@@ -42,6 +43,7 @@
         text-align: center;
         @include centerer(true, true);
         span {
+          font-weight: 300; 
           display: block;
           margin-bottom: 16px;
         }

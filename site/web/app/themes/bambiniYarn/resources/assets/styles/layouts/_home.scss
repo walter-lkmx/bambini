@@ -48,6 +48,12 @@
           @include vertical-align;
           img {
             width: 8rem;
+            &.certified {
+              width: 6rem;
+              position: absolute; 
+              top: -4rem;
+              right: 1rem;
+            }
             &.first-wave {
               margin-bottom: $base-margin * 1.5;
               margin-left: 5%;

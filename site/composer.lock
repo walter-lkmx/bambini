@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bf68d9100bc63055d132217ec522aac",
+    "content-hash": "06ee34dda33348f8075ed2152ed833c3",
     "packages": [
         {
             "name": "composer/installers",
@@ -388,7 +388,7 @@
         },
         {
             "name": "wpackagist-plugin/smtp-mailer",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/smtp-mailer/",
@@ -396,7 +396,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1496301963",
+                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1507176891",
                 "reference": null,
                 "shasum": null
             },
@@ -407,36 +407,16 @@
             "homepage": "https://wordpress.org/plugins/smtp-mailer/"
         },
         {
-            "name": "wpackagist-plugin/woo-extra-flat-rate",
-            "version": "3.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woo-extra-flat-rate/",
-                "reference": "tags/3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woo-extra-flat-rate.3.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woo-extra-flat-rate/"
-        },
-        {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.1.2",
+            "version": "3.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.1.2"
+                "reference": "tags/3.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -445,6 +425,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-display-products-by-tags",
+            "version": "1.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce-display-products-by-tags/",
+                "reference": "tags/1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-display-products-by-tags.1.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-display-products-by-tags/"
         }
     ],
     "packages-dev": [
