@@ -20,13 +20,16 @@ header.banner {
       }
       img {
         // margin-top: $base-margin - .4;
-        height: 45px;
+        height: 26px;
         vertical-align: top;
-        padding-top: $base-padding - .3;
-        margin-right: $base-margin;
+        margin-top: 0.9rem;
+        margin-right: 2rem;
+        display: inline-block;
+        font-size: 0;
         @include mq($max-width: 768px) {
           height: 35px;
           padding-top: $base-padding;
+          margin-top: 0.5rem;
         }
       }
       &:after {
@@ -41,9 +44,9 @@ header.banner {
       }
     }
     .nav-primary {
-        @include mq($min-width: 820px) {
-          width: 50%;
-        }
+      @include mq($min-width: 820px) {
+        width: 50%;
+      }
     }
     nav {
       display: inline-block;
@@ -120,9 +123,9 @@ header.banner {
       }
       .woocommerce-product-search {
         display: inline-block;
-        width: 100%;
-        //width: 300px;
+        width: 100%; //width: 300px;
         margin-left: $base-margin * 7;
+
         @include mq($max-width: 768px) {
           display: block;
           width: 100%;
@@ -144,12 +147,11 @@ header.banner {
           background-image: url('../images/search.svg');
           background-repeat: no-repeat;
           background-position: 97% 50%;
-          background-size: 4%;
-          //background-size: 4%;
-          @include mq($max-width: 768px) {
+          background-size: 4%; //background-size: 4%;
+          border-radius: 5rem;
+          @include mq($max-width: 768px) { 
             background-size: 3%;
           }
-          border-radius: 0;
           box-shadow: none;
         }
         input[type="submit"] {
