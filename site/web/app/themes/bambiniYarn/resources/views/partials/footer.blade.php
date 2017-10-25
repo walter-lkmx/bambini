@@ -40,7 +40,7 @@ var Tawk_API = Tawk_API || {},
         </ul>
         <ul>
             <li>Compra segura</li>
-            <li>Términos y condiciones</li>
+            <li><a href="https://www.paypal.com/mx/webapps/mpp/ua/useragreement-full" target="_blank" style="color: #fff;">Términos y condiciones</a></li>
             <li>Política de privacidad</li>
         </ul>
         <ul class="social">
