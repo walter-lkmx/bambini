@@ -41,7 +41,8 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/woocommerce": "^3.0.7",
     "wpackagist-plugin/smtp-mailer": "^1.0.3",
-    "wpackagist-plugin/woocommerce-display-products-by-tags": "^1.0.0"
+    "wpackagist-plugin/woocommerce-display-products-by-tags": "^1.0.0",
+    "wpackagist-plugin/typekit-fonts-for-wordpress": "^1.8.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
