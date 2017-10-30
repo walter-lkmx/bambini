@@ -3,6 +3,6 @@
 <div class="sidebar">
 	@include('partials.sidebar') 
 </div>
-@php(woocommerce_content()) 
+@php(woocommerce_content())
 @include('partials.useful-info')
-@endsection 
+@endsection

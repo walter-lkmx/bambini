@@ -16,7 +16,7 @@
     {{-- @include('partials.featured-recommended') --}}
     @include('partials.featured-popular')
     {{-- @include('partials.featured-trending') --}}
-    @include('partials.useful-info')
     @include('partials.content-page')
   @endwhile
+  @include('partials.useful-info')
 @endsection

@@ -40,15 +40,15 @@ var Tawk_API = Tawk_API || {},
         </ul>
         <ul>
             <li>Compra segura</li>
-            <li><a href="https://www.paypal.com/mx/webapps/mpp/ua/useragreement-full" target="_blank" style="color: #fff;">Términos y condiciones</a></li>
-            <li>Política de privacidad</li>
+            <li><a href="/terminos-y-condiciones" target="_blank" style="color: #fff;">Términos y condiciones</a></li>
+            <li><a href="/politica-de-privacidad" target="_blank" style="color: #fff;">Política de privacidad</a></li>
         </ul>
         <ul class="social">
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-            <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
-            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><a href="https://www.facebook.com/Bambiniclub-307504209655132/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com.mx/bambiniclub0283/pins/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/bambini.club.store/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
     </div>
 </footer>

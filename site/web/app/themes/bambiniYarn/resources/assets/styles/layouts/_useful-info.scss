@@ -2,58 +2,55 @@
   clear: both;
   overflow: hidden; 
   margin-bottom: $base-margin * 4;
-  max-width: 1280px; 
+  //max-width: 1280px; 
   padding: $base-padding;
   position: relative;
   // background-color: $brand-blue-sky;
   background-image: url('../images/banner.svg');
   background-size: cover; 
-  @extend .vertical-centering;
-
-  .container {
-    display: inline-block;
-    float: left; //width: calc(32%);
+  display: inline-block;
+  float: left; //width: calc(32%);
+  width: 100%;
+  margin-right: 2%;
+  @include mq($max-width: 768px) {
+    height: 130px;
+  }
+  @include mq($max-width: 375px) {
+    display: block;
+    float: none;
     width: 100%;
-    margin-right: 2%;
-    @include mq($max-width: 768px) {
-      height: 130px;
-    }
-    @include mq($max-width: 375px) {
-      display: block;
-      float: none;
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: $base-margin;
-    } // background: rgba($brand-dark, .1);
-    height: 200px;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: center;
-    img {
-      max-width: 100%; // max-height: 100%;
-    }
-    &:last-child {
-      float: right;
-      margin-right: 0;
-      background-image: url('../images/banner.svg');
-      padding: 26px;
-      h1 {
-        color: $brand-white;
-        line-height: 2.5rem;
-        text-align: center;
-        @include centerer(true, true);
-        span {
-          font-weight: 300; 
-          display: block;
-          margin-bottom: 16px;
-        }
-        img {
-          width: 68px;
-          display: block;
-          margin-right: auto;
-          margin-left: auto;
-        }
+    margin-right: 0;
+    margin-bottom: $base-margin;
+  } // background: rgba($brand-dark, .1);
+  height: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  img {
+    max-width: 100%; // max-height: 100%;
+  }
+  &:last-child {
+    float: right;
+    margin-right: 0;
+    background-image: url('../images/banner.svg');
+    padding: 26px;
+    h1 {
+      color: $brand-white;
+      line-height: 2.5rem;
+      text-align: center;
+      @include centerer(true, true);
+      span {
+        font-weight: 300; 
+        display: block;
+        margin-bottom: 16px;
+      }
+      img {
+        width: 68px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
   }
+  @extend .vertical-centering;
 }

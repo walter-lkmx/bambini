@@ -125,6 +125,10 @@
         padding-top: $base-padding * 2;
         padding-bottom: $base-padding * 2;
         padding-right: $base-padding * 2;
+        p {
+          font-family: Museo Slab;
+          font-weight: 300;
+        }
         .description_tab,
         .reviews_tab,
         .additional_information_tab {

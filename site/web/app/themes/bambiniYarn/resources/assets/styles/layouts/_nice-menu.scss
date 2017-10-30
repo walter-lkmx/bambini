@@ -14,7 +14,7 @@
   @extend .slide-in-elliptic-top-fwd;
   section {
     h3 {}
-    ul {
+    ul, ul.product-categories {
       li {
         line-height: 2;
         a {
@@ -34,6 +34,23 @@
             .firstWord {
               color: $brand-blue-sky;
             }
+          }
+        }
+      }
+    }
+    ul.children {
+      li {
+        line-height: 2;
+        a {
+          display: block;
+          font-weight: $base-font-weight-bold;
+          font-size: $base-font-size - 0.1;
+          color: $brand-primary;
+          @include mq($max-width: 375px) {
+            font-size: $base-font-size - .2;
+          }
+          &:hover {
+            color: $brand-blue-sky;
           }
         }
       }
