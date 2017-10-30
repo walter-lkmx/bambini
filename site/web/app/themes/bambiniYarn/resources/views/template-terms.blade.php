@@ -7,14 +7,11 @@
 @section('content') 
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-     <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
           <article @php(post_class())>
   <header>
-    <h2 class="entry-title">DIGITIENDAS MARESI, S.A.P.I. DE C.V<br>
+    <h4 class="entry-title">DIGITIENDAS MARESI, S.A.P.I. DE C.V<br>
     <b>TÉRMINOS Y CONDICIONES</b>
-    </h2>
+    </h4>
   </header>
   <div class="entry-summary">
     <b>Por favor, lee atentamente estos términos y condiciones antes de usar esta web.</b>
@@ -42,8 +39,5 @@ Productos, Contenido y Especificaciones: Todas las características, contenido, 
 <p><b>Asistencia Adicional:</b> Si no has comprendido alguna de las Condiciones Generales anteriores o si tienes alguna pregunta o comentario, te invitamos a que contactes con nuestro Servicio de Atención al Cliente mediante llamada al teléfono <b>(664) 364 7961</b> o mediante al correo electrónico dirigido a <b>info@bambini.club</b>.</p>
   </div>
 </article>
-        </main>
-      </div>
-    </div>
   @endwhile
 @endsection

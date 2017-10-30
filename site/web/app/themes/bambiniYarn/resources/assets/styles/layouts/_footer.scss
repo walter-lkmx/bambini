@@ -40,6 +40,9 @@ footer {
         color: $brand-white;
         margin-bottom: $base-margin / 1.5;
         font-size: $base-font-size - .1;
+        a {
+          color: $brand-white;
+        }
         &:first-child {
           color: $brand-white;
           font-weight: $base-font-weight-normal;
