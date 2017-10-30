@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: repeat;
     overflow: hidden;
-    height: 400px;
+    height: 440px;
     margin-bottom: $base-margin * 4;
     @include mq($max-width: 375px) {
       height: 200px;

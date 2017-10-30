@@ -19,5 +19,7 @@
     @php(do_action('get_footer'))
     @include('partials.footer')
     @php(wp_footer())
+    <script src="https://use.typekit.net/afo1ciu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>

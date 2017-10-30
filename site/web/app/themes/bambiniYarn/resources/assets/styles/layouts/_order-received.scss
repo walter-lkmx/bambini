@@ -1,5 +1,17 @@
 .woocommerce-order-received {
   // background-image: url('../images/welcome-pattern-light.svg'), linear-gradient($brand-white, $brand-white);
+  .thanks-pop {
+    // background: red;
+    width: 360px;
+    height: 490px;
+    z-index: 9999;
+    box-shadow: 0 8px 50px -6px rgba($brand-grey-purple, .56);
+    background-image: url(../images/gracias-v.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include centerer(true, true);
+  }
+
   main {
     overflow: visible;
     width: 60%;
@@ -69,11 +81,11 @@
           font-size: $base-font-size * 1.2;
         }
         .woocommerce-customer-details {
-            padding-right: 0;
-            padding-left: 0;
-            h3 {
-                margin-bottom: $base-margin;
-            }
+          padding-right: 0;
+          padding-left: 0;
+          h3 {
+            margin-bottom: $base-margin;
+          }
         }
       }
       .woocommerce-thankyou-order-received {
