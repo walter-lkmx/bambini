@@ -1,6 +1,12 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
+
+    $("body.woocommerce-order-received").append("<div class=\"thanks-pop\"></div>");
+
+    $(".thanks-pop").delay(6000).fadeOut(2000);  
+
+
     $(function() {
       $(document).ready(function() {
         $("body").addClass('initial-display');
@@ -22,7 +28,7 @@ export default {
       $(".woocommerce-notice").prepend("<div class=\"badge\"><i class=\"icons8-online-payment\"></i></div>");
 
       //const truncate = require('truncator-js');
-      
+
       const truncate = function(selector, limit) {
         let element = document.querySelectorAll(selector);
         if (element) {

@@ -4,5 +4,5 @@
 	@include('partials.sidebar') 
 </div>
 @php(woocommerce_content())
-@include('partials.useful-info')
+{{-- @include('partials.useful-info') --}}
 @endsection
