@@ -5,9 +5,9 @@
 wordpress_sites:
   bambini.club:
     site_hosts:
-      - canonical: bambini.club
-        # redirects:
-        #   - otherdomain.com
+      - canonical: www.bambini.club
+        redirects:
+          - bambini.club
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:walter-lkmx/bambini.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
