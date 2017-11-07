@@ -3,9 +3,9 @@
   "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.svg": "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b_e548425a.svg",
   "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.ttf": "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b_759a7c86.ttf",
   "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b.woff": "fonts/Bambini_51f6e29d3ca4bc761f7c33b4742a5c0b_b788afa6.woff",
-  "images/bamb-s01.png": "images/bamb-s01_2847ef08.png",
-  "images/bamb-s02.png": "images/bamb-s02_c9203385.png",
-  "images/bamb-s03.png": "images/bamb-s03_27f1aa78.png",
+  "images/bamb-s01.png": "images/bamb-s01_d375d4b7.png",
+  "images/bamb-s02.png": "images/bamb-s02_3c02f6bb.png",
+  "images/bamb-s03.png": "images/bamb-s03_94cdec5e.png",
   "images/bambini.ico": "images/bambini_77d4ec60.ico",
   "images/bambini.png": "images/bambini_9ba147d9.png",
   "images/banner.svg": "images/banner_df316386.svg",
@@ -41,7 +41,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_32110f7f.js",
-  "styles/main.css": "styles/main_32110f7f.css",
-  "scripts/main.js": "scripts/main_32110f7f.js"
+  "scripts/customizer.js": "scripts/customizer_ff5ecb46.js",
+  "styles/main.css": "styles/main_ff5ecb46.css",
+  "scripts/main.js": "scripts/main_ff5ecb46.js"
 }

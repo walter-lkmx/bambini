@@ -4,7 +4,7 @@ export default {
 
     $("body.woocommerce-order-received").append("<div class=\"thanks-pop\"></div>");
 
-    $(".thanks-pop").delay(6000).fadeOut(2000);  
+    $(".thanks-pop").delay(6000).fadeOut(2000);
 
 
     $(function() {
@@ -12,10 +12,22 @@ export default {
         $("body").addClass('initial-display');
       });
       // Slider options
+
+      // hide slide for microSeconds
+      setTimeout(function() {
+      $(".promos").hide('fast');
+      }, 500);
+
+      // show slide after one second
+      setTimeout(function() {
+      $(".promos").show('slow');
+      }, 1000); 
+
+      // slide options
       $(".promos").unslider({
         autoplay: true,
         animation: 'fade',
-        delay: '5000',
+        delay: '10000',
         arrows: {
           //  Unslider default behaviour
           prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>',
