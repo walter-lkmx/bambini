@@ -6,8 +6,8 @@ wordpress_sites:
   bambini.club:
     site_hosts:
       - canonical: bambini.club
-        # redirects:
-        #   - otherdomain.com
+        redirects:
+          - www.bambini.club
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:walter-lkmx/bambini.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
@@ -15,7 +15,9 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: false
-      provider: letsencrypt
+      enabled: true
+      provider: manual
+      cert: /root/ssl/bambini.club.crt
+      key: /root/ssl/bambini.club.key
     cache:
       enabled: false
