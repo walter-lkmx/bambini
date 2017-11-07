@@ -25,9 +25,9 @@
         position: relative;
         float: left; // padding: $base-padding;
         box-sizing: border-box;
-        width: 49%;
-        height: 350px;
-        margin-bottom: $base-margin * 4;
+        width: 50%;
+        height: 400px;
+        //margin-bottom: $base-margin * 4;
         @include mq($max-width: 375px) {
           height: 150px;
         }

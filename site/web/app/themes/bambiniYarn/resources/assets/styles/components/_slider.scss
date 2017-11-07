@@ -13,7 +13,7 @@
     .unslider-wrap {
       text-align: center; // @include centerer(false, true);
       li {
-
+        height: 100%;
         text-align: center; // position: relative !important;
         @include mq($max-width: 768px) {
           padding-top: $base-padding * 4;
@@ -23,8 +23,8 @@
         }
         img {
           // max-width: 100%;
-          height: 100%;
-          width: 79%;
+          //height: 100%;
+          width: 85%;
         }
       }
     }
