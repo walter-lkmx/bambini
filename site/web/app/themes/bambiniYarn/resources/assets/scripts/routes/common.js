@@ -16,12 +16,12 @@ export default {
       // hide slide for microSeconds
       setTimeout(function() {
       $(".promos").hide('fast');
-      }, 500);
+      }, 0);
 
       // show slide after one second
       setTimeout(function() {
-      $(".promos").show('slow');
-      }, 1000); 
+      $(".promos").fadeIn('fast');
+      }, 3000); 
 
       // slide options
       $(".promos").unslider({
