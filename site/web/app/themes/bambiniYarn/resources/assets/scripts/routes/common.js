@@ -14,14 +14,13 @@ export default {
       // Slider options
 
       // hide slide for microSeconds
-      setTimeout(function() {
-      $(".promos").fadeOut('fast');
-      }, 0);
-
+    
+       // $(".promos").fadeOut('fast');
       // show slide after one second
       setTimeout(function() {
-      $(".promos").fadeIn('fast');
-      }, 3000); 
+      $(".unslider-wrap > li").fadeIn('fast');
+      // $(".promos").css('display', 'block');
+      }, 2000); 
 
       // slide options
       $(".promos").unslider({
