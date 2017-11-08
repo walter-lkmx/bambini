@@ -17,22 +17,21 @@ export default {
     
        // $(".promos").fadeOut('fast');
       // show slide after one second
-       setTimeout(function() {
-      $(".unslider-wrap > li").css('display', 'none');
-      // $(".promos").css('display', 'block');
-      }, 0);
+
+      $(".unslider-wrap > li.unslider-active").css('display', 'none');
+
        setTimeout(function() {
       $(".unslider-wrap > li:nth-child(1)").fadeIn('fast');
       // $(".promos").css('display', 'block');
-      }, 1000);
+      }, 20000);
       setTimeout(function() {
       $(".unslider-wrap > li:nth-child(2)").fadeIn('fast');
       // $(".promos").css('display', 'block');
-      }, 2000); 
+      }, 30000); 
       setTimeout(function() {
       $(".unslider-wrap > li:nth-child(3)").fadeIn('fast');
       // $(".promos").css('display', 'block');
-      }, 3000); 
+      }, 40000); 
 
       // slide options
       $(".promos").unslider({
