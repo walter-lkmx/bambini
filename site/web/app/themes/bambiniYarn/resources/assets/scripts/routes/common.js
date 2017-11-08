@@ -18,20 +18,11 @@ export default {
        // $(".promos").fadeOut('fast');
       // show slide after one second
 
-      $(".unslider-wrap > li.unslider-active").css('display', 'none');
+      $('.promos').css('opacity', '0');   
 
-       setTimeout(function() {
-      $(".unslider-wrap > li:nth-child(1)").fadeIn('fast');
-      // $(".promos").css('display', 'block');
-      }, 20000);
-      setTimeout(function() {
-      $(".unslider-wrap > li:nth-child(2)").fadeIn('fast');
-      // $(".promos").css('display', 'block');
-      }, 30000); 
-      setTimeout(function() {
-      $(".unslider-wrap > li:nth-child(3)").fadeIn('fast');
-      // $(".promos").css('display', 'block');
-      }, 40000); 
+      setTimeout(function(){
+        $('.promos').css('opacity', '1');   
+      }, 2500);
 
       // slide options
       $(".promos").unslider({
