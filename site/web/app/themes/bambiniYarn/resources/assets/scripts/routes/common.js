@@ -15,7 +15,7 @@ export default {
 
       // hide slide for microSeconds
       setTimeout(function() {
-      $(".promos").hide('fast');
+      $(".promos").fadeOut('fast');
       }, 0);
 
       // show slide after one second
