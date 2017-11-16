@@ -223,8 +223,9 @@
             margin-bottom: $base-margin * 1.5;
           }
           label {
-            // display: block;
+            display: block;
             font-weight: $base-font-weight-light;
+            margin-bottom: $base-margin;
             a {
               font-weight: $base-font-weight-light;
               margin-top: $base-margin;
@@ -255,6 +256,21 @@
           }
           .payment_box {
             // display: none !important;
+            div {
+              div:first-child {
+                div {
+                  display: block !important;
+                  margin-bottom: $base-margin !important;
+                  float: none !important;
+                  width: 100% !important;
+                  &:last-child {
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
             .form-row-wide {
               margin-bottom: $base-margin;
             }
