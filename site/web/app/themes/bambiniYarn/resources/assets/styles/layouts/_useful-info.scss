@@ -34,11 +34,16 @@
     margin-right: 0;
     background-image: url('../images/banner.svg');
     padding: 26px;
+    @include mq($max-width: 375px) {
+      padding: 15px;
+    }
     h1 {
       color: $brand-white;
       line-height: 2.5rem;
       text-align: center;
-      @include centerer(true, true);
+      @include screen(667px, 1280px) {
+        @include centerer(true, true);
+      }
       span {
         font-weight: 300; 
         display: block;
