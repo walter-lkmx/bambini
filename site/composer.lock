@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffdb229715e99e110ef04b4e14d3f8e6",
+    "content-hash": "defe5e31931e2a58d25f627fb4e14828",
     "packages": [
+        {
+            "name": "bambini/addon-unlimited-popups",
+            "version": "1.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/walter-lkmx/woo-plugins/raw/master/addon-unlimited-popups.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bambini/cssjockey-add-ons",
+            "version": "2.4.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/walter-lkmx/woo-plugins/raw/master/cssjockey-add-ons.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bambini/open-pay-spec",
+            "version": "2.2.13",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/walter-lkmx/woo-plugins/raw/master/openpay-cards-spec.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -387,6 +420,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
+            "version": "1.7.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
+                "reference": "tags/1.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.7.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duracelltomi-google-tag-manager/"
+        },
+        {
             "name": "wpackagist-plugin/smtp-mailer",
             "version": "1.0.4",
             "source": {
@@ -427,16 +480,36 @@
             "homepage": "https://wordpress.org/plugins/typekit-fonts-for-wordpress/"
         },
         {
-            "name": "wpackagist-plugin/woocommerce",
-            "version": "3.2.1",
+            "name": "wpackagist-plugin/webappick-product-feed-for-woocommerce",
+            "version": "2.1.24",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.2.1"
+                "url": "https://plugins.svn.wordpress.org/webappick-product-feed-for-woocommerce/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/webappick-product-feed-for-woocommerce.zip?timestamp=1509705972",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/webappick-product-feed-for-woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "3.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/3.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -465,6 +538,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/woocommerce-display-products-by-tags/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "5.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/5.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [
