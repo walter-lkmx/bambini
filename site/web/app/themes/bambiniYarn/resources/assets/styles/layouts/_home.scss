@@ -50,6 +50,11 @@
             width: 8rem;
             &.certified {
               width: 6rem;
+              @include mq($max-width: 375px) {
+                width: 3rem;
+                top: 8rem;
+                right: -1rem;
+              }
               position: absolute; 
               top: -4rem;
               right: 1rem;

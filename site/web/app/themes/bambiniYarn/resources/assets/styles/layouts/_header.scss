@@ -114,6 +114,9 @@ header.banner {
       a {
         color: $brand-white;
         margin-right: $base-margin;
+        @include mq($max-width: 375px) {
+          margin-right: $base-margin * 0;
+        }
         transition: $base-transition;
         &:hover {
           text-decoration: underline;
@@ -170,7 +173,8 @@ header.banner {
           float: none;
         }
         @include mq($max-width: 375px) {
-          margin-left: $base-margin * 2;
+          margin-left: $base-margin * 17;
+          margin-top: $base-margin * -4.3;
         }
         a {
           &:first-child {
@@ -180,8 +184,10 @@ header.banner {
             padding-right: $base-padding * 2;
             padding-left: $base-padding * 2;
             @include mq($max-width: 375px) {
-              padding-right: $base-padding;
-              padding-left: $base-padding;
+              padding-right: $base-padding * .5;
+              padding-left: $base-padding * .5;
+              border-right: none;
+              border-left: none;
             }
           }
 
