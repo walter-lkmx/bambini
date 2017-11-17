@@ -85,7 +85,7 @@ p {
 // Containers
 .wrap {
   max-width: 1280px; // width: 100%;
-  @include mq($max-width: 768px) {
+  @include mq($max-width: 766px) {
     margin-top: $base-margin * 3;
   }
   padding: $base-padding;

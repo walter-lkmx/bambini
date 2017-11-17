@@ -44,6 +44,9 @@
       @include screen(667px, 1280px) {
         @include centerer(true, true);
       }
+      @include screen(320px, 627px){
+          font-size: 2rem;
+      }
       span {
         font-weight: 300; 
         display: block;

@@ -9,10 +9,19 @@
     background-position: center;
     background-repeat: repeat;
     overflow: hidden;
-    height: 440px;
+    height: 550px;
     margin-bottom: $base-margin * 4;
-    @include mq($max-width: 375px) {
+    @include screen(320px, 424px) {
       height: 200px;
+    }
+    @include screen(425px, 567px) {
+      height: 200px;
+    }
+    @include screen(568px, 799px) {
+      height: 350px;
+    }
+    @include screen(800px, 1099px) {
+      height: 450px;
     }
     .container {
       max-width: 1280px;
@@ -26,10 +35,16 @@
         float: left; // padding: $base-padding;
         box-sizing: border-box;
         width: 50%;
-        height: 400px;
+        height: 500px;
         //margin-bottom: $base-margin * 4;
-        @include mq($max-width: 375px) {
+        @include screen(320px, 567px) {
           height: 150px;
+        }
+        @include screen(568px, 799px) {
+          height: 350px;
+        }
+        @include screen(800px, 1099px) {
+          height: 400px;
         }
       }
       .search-box {
@@ -37,7 +52,7 @@
         box-sizing: border-box;
         width: 50%;
         height: 350px;
-        @include mq($max-width: 375px) {
+        @include screen(320px, 425px) {
           height: 150px;
         }
         padding: $base-padding;
@@ -51,18 +66,19 @@
           @include vertical-align;
           img {
             width: 8rem;
-            @include screen(320px, 375px) {
+            @include screen(320px, 425px) {
               width: 4rem;
             }
             &.certified {
               width: 6rem;
-              @include screen(320px, 375px) {
+              @include screen(320px, 567px) {
                 width: 3rem;
                 top: -1rem;
                 right: 0rem;
               }
-              @include screen(375px, 768px) {
-                top: -1rem;
+              @include screen(568px, 768px) {
+                width: 4rem;
+                top: -4rem;
                 right: 0rem;
               }
               position: absolute; 
@@ -72,14 +88,21 @@
             &.first-wave {
               margin-bottom: $base-margin * 1.5;
               margin-left: 5%;
-              @include screen(320px, 375px) {
+              @include screen(320px, 424px) {
+                margin-bottom: $base-margin * 0;
+                margin-left: 0;
+              }
+              @include screen(425px, 767px) {
                 margin-bottom: $base-margin * 0;
                 margin-left: 0;
               }
             }
             &.second-wave {
               margin-left: 30%;
-              @include screen(320px, 375px) {
+              @include screen(320px, 424px) {
+                margin-left: 30%;
+              }
+              @include screen(425px, 767px) {
                 margin-left: 30%;
               }
               margin-bottom: $base-margin * 1.5;
@@ -92,16 +115,18 @@
             padding-left: $base-padding * 2;
             margin-bottom: $base-margin * 2;
             line-height: .5;
-            @include screen(320px, 375px) {
-              margin-bottom: 0.6rem;
-            }
             @include mq($max-width: 768px) {
               line-height: 1;
             }
-            @include screen(320px, 375px) {
+            @include screen(320px, 424px) {
+              margin-bottom: 0.6rem;
                 font-size: $base-font-size * 0.7;
                 padding-left: $base-padding;
                 line-height: 1.2;
+            }
+            @include screen(425px, 667px) {
+              font-size: $base-font-size * 1.2; 
+              margin-bottom: 0.5rem;
             }
             .first-line {
               padding-left: $base-padding * 2;

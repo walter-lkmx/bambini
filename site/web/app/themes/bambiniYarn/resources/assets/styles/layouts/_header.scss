@@ -22,10 +22,16 @@ header.banner {
         // margin-top: $base-margin - .4;
         //height: 26px;
         width: 190px;
-        @include screen(320px, 375px) {
-          width: 120px;
+        @include screen(320px, 374px) {
+          width: 110px;
         }
-        @include screen(375px, 425px) {
+        @include screen(375px, 424px) {
+          width: 170px;
+        }
+        @include screen(425px, 766px) {
+          width: 180px;
+        }
+        @include screen(767px, 1023px) {
           width: 180px;
         }
         vertical-align: top;
@@ -61,14 +67,18 @@ header.banner {
       .menu-toggle {
         text-align: center;
         display: inline-block;
-        padding: 9px 10px 0 10px;
+        padding: 9px 10px 0 0;
         position: absolute;
         top: 0;
-        @include mq($max-width: 768px) {
+        @include screen(425px, 766px) {
           margin-right: 0;
-          padding: 27px 25px 0px 35px;
+          padding: 1.6rem 0rem 0rem 0rem;
         }
-        @include mq($max-width: 375px) {
+        @include screen(767px, 1023px) {
+          margin-right: 0;
+          padding: 1.5rem 0rem 0rem 0rem;
+        }
+        @include screen(320px, 375px) {
           padding: 27px 10px 0 0px;
         }
         &:hover {
@@ -134,9 +144,9 @@ header.banner {
       .woocommerce-product-search {
         display: inline-block;
         width: 100%; //width: 300px;
-        margin-left: $base-margin * 7;
+        margin-left: $base-margin * 6;
 
-        @include mq($max-width: 768px) {
+        @include screen(320px, 766px) {
           display: block;
           width: 100%;
           left: 0;
@@ -145,6 +155,13 @@ header.banner {
           margin-top: 30px;
           padding: .5rem;
           margin-left: 0;
+        }
+        @include screen(767px, 1023px){
+          margin-left: $base-margin * 3;
+          width: 110%;
+        }
+        @include screen(1024px, 1149px){
+          width: 90%;
         }
         label {
           display: none;
@@ -173,18 +190,27 @@ header.banner {
         margin-right: $base-margin;
         margin-top: $base-margin * 1.1;
         position: relative;
-        @include mq($max-width: 768px) {
-          margin-right: 0;
-          margin-left: $base-margin * 6;
+        @include screen(320px, 374px) {
+          margin-left: $base-margin * 1.5;
+          margin-top: $base-margin * 0;
           float: none;
         }
-        @include screen(320px, 375px) {
-          margin-left: $base-margin * 13;
-          margin-top: $base-margin * -4.3;
+        @include screen(375px, 424px) {
+          margin-left: $base-margin * 1.5;
+          margin-top: $base-margin * 0;
+          float: none;
         }
-        @include screen(375px, 425px) {
-          margin-left: $base-margin * 17;
-          margin-top: $base-margin * -4.3;
+        @include screen(425px, 766px) {
+          margin-right: 0;
+          margin-left: $base-margin * 2;
+          margin-top: 0;
+          float: none;
+        }
+        @include screen(767px, 1023px) {
+          margin-right: 0;
+          margin-left: $base-margin * 6;
+          margin-top: 0;
+          float: none;
         }
         a {
           &:first-child {
@@ -193,11 +219,21 @@ header.banner {
             border-color: rgba($brand-white, .5);
             padding-right: $base-padding * 2;
             padding-left: $base-padding * 2;
-            @include mq($max-width: 375px) {
-              padding-right: $base-padding * .5;
-              padding-left: $base-padding * .5;
+            @include screen(320px, 374px) {
+              padding: 1rem 0.5rem 0 0.5rem;
               border-right: none;
               border-left: none;
+            }
+            @include screen(375px, 424px) {
+              padding: 1rem 0.5rem 0 0.5rem;
+              border-right: none;
+              border-left: none;
+            }
+            @include screen(425px, 766px) {
+              padding: 1rem 0.9rem 0 0.9rem;
+            }
+            @include screen(767px, 1023px) {
+              padding: 0.5rem 0.9rem 0 0.9rem;
             }
           }
 
