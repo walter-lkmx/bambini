@@ -35,12 +35,15 @@
       .search-box {
         float: right;
         box-sizing: border-box;
-        width: 49%;
+        width: 50%;
         height: 350px;
         @include mq($max-width: 375px) {
           height: 150px;
         }
-        padding: $base-padding; // border: $base-border;
+        padding: $base-padding;
+        @include screen(320px, 375px) {
+          padding: 0;
+        } // border: $base-border;
         // border-color: rgba($brand-dark, .3);
         // background-color: rgba($brand-dark, .05);
         margin-bottom: $base-margin * 4;
@@ -48,12 +51,19 @@
           @include vertical-align;
           img {
             width: 8rem;
+            @include screen(320px, 375px) {
+              width: 4rem;
+            }
             &.certified {
               width: 6rem;
-              @include mq($max-width: 375px) {
+              @include screen(320px, 375px) {
                 width: 3rem;
-                top: 8rem;
-                right: -1rem;
+                top: -1rem;
+                right: 0rem;
+              }
+              @include screen(375px, 768px) {
+                top: -1rem;
+                right: 0rem;
               }
               position: absolute; 
               top: -4rem;
@@ -62,9 +72,16 @@
             &.first-wave {
               margin-bottom: $base-margin * 1.5;
               margin-left: 5%;
+              @include screen(320px, 375px) {
+                margin-bottom: $base-margin * 0;
+                margin-left: 0;
+              }
             }
             &.second-wave {
               margin-left: 30%;
+              @include screen(320px, 375px) {
+                margin-left: 30%;
+              }
               margin-bottom: $base-margin * 1.5;
             }
           }
@@ -75,13 +92,16 @@
             padding-left: $base-padding * 2;
             margin-bottom: $base-margin * 2;
             line-height: .5;
+            @include screen(320px, 375px) {
+              margin-bottom: 0.6rem;
+            }
             @include mq($max-width: 768px) {
               line-height: 1;
             }
-            @include mq($max-width: 375px) {
-              font-size: $base-font-size;
-              padding-left: $base-padding;
-              line-height: 1.2;
+            @include screen(320px, 375px) {
+                font-size: $base-font-size * 0.7;
+                padding-left: $base-padding;
+                line-height: 1.2;
             }
             .first-line {
               padding-left: $base-padding * 2;

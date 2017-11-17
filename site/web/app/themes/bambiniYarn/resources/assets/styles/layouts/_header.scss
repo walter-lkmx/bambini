@@ -22,6 +22,12 @@ header.banner {
         // margin-top: $base-margin - .4;
         //height: 26px;
         width: 190px;
+        @include screen(320px, 375px) {
+          width: 120px;
+        }
+        @include screen(375px, 425px) {
+          width: 180px;
+        }
         vertical-align: top;
         margin-top: 0.9rem;
         margin-right: 2rem;
@@ -172,7 +178,11 @@ header.banner {
           margin-left: $base-margin * 6;
           float: none;
         }
-        @include mq($max-width: 375px) {
+        @include screen(320px, 375px) {
+          margin-left: $base-margin * 13;
+          margin-top: $base-margin * -4.3;
+        }
+        @include screen(375px, 425px) {
           margin-left: $base-margin * 17;
           margin-top: $base-margin * -4.3;
         }
