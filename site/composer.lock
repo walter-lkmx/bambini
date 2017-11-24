@@ -4,30 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "defe5e31931e2a58d25f627fb4e14828",
+    "content-hash": "6c1e8e9e631ecddc9a440674e2e84ea5",
     "packages": [
-        {
-            "name": "bambini/addon-unlimited-popups",
-            "version": "1.5.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/walter-lkmx/woo-plugins/raw/master/addon-unlimited-popups.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
-        },
-        {
-            "name": "bambini/cssjockey-add-ons",
-            "version": "2.4.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/walter-lkmx/woo-plugins/raw/master/cssjockey-add-ons.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
-        },
         {
             "name": "bambini/open-pay-spec",
             "version": "2.2.13",
@@ -421,15 +399,15 @@
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.7.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -440,8 +418,28 @@
             "homepage": "https://wordpress.org/plugins/duracelltomi-google-tag-manager/"
         },
         {
+            "name": "wpackagist-plugin/popup-maker",
+            "version": "1.6.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/popup-maker/",
+                "reference": "tags/1.6.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.6.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/popup-maker/"
+        },
+        {
             "name": "wpackagist-plugin/smtp-mailer",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/smtp-mailer/",
@@ -449,7 +447,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1507176891",
+                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1510899133",
                 "reference": null,
                 "shasum": null
             },
@@ -501,15 +499,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.2.3",
+            "version": "3.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.2.3"
+                "reference": "tags/3.2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.5.zip",
                 "reference": null,
                 "shasum": null
             },
