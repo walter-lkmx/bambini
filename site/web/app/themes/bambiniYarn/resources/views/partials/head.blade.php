@@ -7,6 +7,21 @@
 	})(window,document,'script','dataLayer','GTM-M9JKVZS');</script>
   <!-- End Google Tag Manager -->
 
+  {{-- start AdView script --}}
+  <script>
+    Tawk_API = Tawk_API || {};
+    Tawk_API.onOfflineSubmit = function(){
+      //place your code here
+      wc_event_ypbib
+      (
+        "form", 
+        "click", 
+        "chat" 
+      );
+    };
+  </script>
+  {{-- end AdView script --}}
+
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
