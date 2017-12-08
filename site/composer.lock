@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c1e8e9e631ecddc9a440674e2e84ea5",
+    "content-hash": "1c2e0463b7874bc7df728a90c8475abf",
     "packages": [
         {
             "name": "bambini/open-pay-spec",
@@ -418,6 +418,26 @@
             "homepage": "https://wordpress.org/plugins/duracelltomi-google-tag-manager/"
         },
         {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "5.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/5.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jetpack/"
+        },
+        {
             "name": "wpackagist-plugin/popup-maker",
             "version": "1.6.6",
             "source": {
@@ -459,15 +479,15 @@
         },
         {
             "name": "wpackagist-plugin/typekit-fonts-for-wordpress",
-            "version": "1.8.4",
+            "version": "1.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/typekit-fonts-for-wordpress/",
-                "reference": "tags/1.8.4"
+                "reference": "tags/1.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/typekit-fonts-for-wordpress.1.8.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/typekit-fonts-for-wordpress.1.9.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -479,7 +499,7 @@
         },
         {
             "name": "wpackagist-plugin/webappick-product-feed-for-woocommerce",
-            "version": "2.1.24",
+            "version": "2.1.25",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webappick-product-feed-for-woocommerce/",
@@ -487,7 +507,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webappick-product-feed-for-woocommerce.zip?timestamp=1509705972",
+                "url": "https://downloads.wordpress.org/plugin/webappick-product-feed-for-woocommerce.zip?timestamp=1512286912",
                 "reference": null,
                 "shasum": null
             },
@@ -539,15 +559,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.8",
+            "version": "5.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.8"
+                "reference": "tags/5.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
