@@ -4,15 +4,23 @@
     <div class="promos"> 
         <ul>
             <li>
-                <img src="@asset('images/bamb-s01.png')" alt="bambini.club">
+                <img src="@asset('images/promo-navidad.png')" alt="bambini.club">
                 {{-- <h3>Lorem ipsum</h3> --}}
             </li>
             <li>
-                <img src="@asset('images/bamb-s02.png')" alt="bambini.club">
+                <img src="@asset('images/promo-10carriolas.png')" alt="bambini.club">
                 {{-- <h3>dolor sit amet</h3> --}}
             </li>
             <li>
-                <img src="@asset('images/bamb-s03.png')" alt="bambini.club">
+                <img src="@asset('images/promo-25productos.png')" alt="bambini.club">
+                {{-- <h3>consectetur adipiscing</h3> --}} 
+            </li>
+            <li>
+                <img src="@asset('images/promo-envio10dias.png')" alt="bambini.club">
+                {{-- <h3>dolor sit amet</h3> --}}
+            </li>
+            <li>
+                <img src="@asset('images/promo-enviogratis.png')" alt="bambini.club">
                 {{-- <h3>consectetur adipiscing</h3> --}} 
             </li>
         </ul>
