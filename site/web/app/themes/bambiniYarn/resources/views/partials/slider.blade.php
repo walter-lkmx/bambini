@@ -3,10 +3,6 @@
     <p>slider</p> --}}
     <div class="promos"> 
         <ul>
-        <li>
-            <img src="@asset('images/promo-navidad.png')" alt="bambini.club" style="width: 84%;">
-                {{-- <h3>Lorem ipsum</h3> --}}
-            </li>
             <li>
                 <img src="@asset('images/bamb-s01.png')" alt="bambini.club">
                 {{-- <h3>Lorem ipsum</h3> --}}
