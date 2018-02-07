@@ -88,7 +88,7 @@ p {
   @include mq($max-width: 766px) {
     margin-top: $base-margin * 3;
   }
-  padding: $base-padding;
+  padding: $base-padding * 1.875;
   overflow: hidden;
   @extend .vertical-centering;
   .page-header {
