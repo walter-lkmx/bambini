@@ -331,9 +331,10 @@
 			p {
 				/*margin: $base-margin 0 $base-margin * 2 0;*/
 				text-align: justify;
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: 100;
 				margin: 0;
+				margin-bottom: $base-margin * 1.5;
 				img {
 				width: 100%;
 				height: auto;
@@ -343,6 +344,27 @@
 				width: 100%;
 				height: auto;
 				margin: $base-margin * 2 0;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				margin: $base-margin * 3 0 $base-margin * 1.5 0;
+				line-height: normal;
+				text-align: left;
+			}
+			ul, ol {
+				text-align: left;
+				list-style-position: inside;
+				font-size: 16px;
+				line-height: $base-line-height;
+				margin-bottom: $base-margin * 2.5;
+				li {
+
+				}
+			}
+			ul {
+				list-style-type: circle;
+			}
+			ol {
+				list-style-type: decimal;
 			}
 		}
 		div.category-list {
