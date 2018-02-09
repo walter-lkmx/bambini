@@ -20,6 +20,8 @@
             ?> 
         </nav>
         <nav class="nav-secondary">
+            <a class="icon-account" href="/blog" title=""><i class="icons8-comments"></i></a>
+            <a class="my-accountText" href="/blog" title="">Blog</a>
             <a class="icon-account" href="/mi-cuenta" title=""><i class="icons8-circled-female-user-2"></i></a>
             <a class="my-accountText" href="/mi-cuenta" title="">Mi cuenta</a>
              <a class="cart-info" href="<?php echo wc_get_cart_url(); ?>" title=""><i class="icons8-shopping-cart"></i>

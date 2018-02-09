@@ -72,7 +72,8 @@
         }
         ol {
             list-style-type: decimal !important;
-            padding: 0 $base-padding * 1.625 $base-padding $base-padding * 3.625;
+            list-style-position: inside;
+            padding: 0 $base-padding * 1.625 $base-padding $base-padding * 1.625;
             color: $brand-primary;
             font-size: 34px;
             @include mq($max-width: 1050px) {

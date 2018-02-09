@@ -169,7 +169,7 @@ header.banner {
         input {
           display: block;
           box-sizing: border-box;
-          width: 100%;
+          width: 80%;
           height: 40px; // margin-bottom: $base-margin; // padding-left: $base-padding * 3;
           background-image: url('../images/search.svg');
           background-repeat: no-repeat;
@@ -178,6 +178,7 @@ header.banner {
           border-radius: 5rem;
           @include mq($max-width: 768px) { 
             background-size: 3%;
+            width: 100%;
           }
           box-shadow: none;
         }
