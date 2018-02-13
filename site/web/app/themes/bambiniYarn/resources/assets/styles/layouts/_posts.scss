@@ -307,6 +307,12 @@
 				a {
 					color: $brand-violet;
 				}
+				@include mq($max-width: 766px) {
+		        	font-size: 26px;
+		        }
+		        @include mq($max-width: 1180px) {
+		        	font-size: 38px;
+		        }
 			}
 			div.blog-header {
 				margin-top: $base-margin * 2;

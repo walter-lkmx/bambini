@@ -23,13 +23,13 @@ header.banner {
         //height: 26px;
         width: 190px;
         @include screen(320px, 374px) {
-          width: 110px;
+          width: 85px;
         }
         @include screen(375px, 424px) {
-          width: 170px;
+          width: 110px;
         }
         @include screen(425px, 766px) {
-          width: 180px;
+          width: 145px;
         }
         @include screen(767px, 1023px) {
           width: 180px;
@@ -57,7 +57,7 @@ header.banner {
       }
     }
     .nav-primary {
-      @include mq($min-width: 820px) {
+      @include mq($min-width: 935px) {
         width: 50%;
       }
     }
@@ -70,15 +70,17 @@ header.banner {
         padding: 9px 10px 0 0;
         position: absolute;
         top: 0;
-        @include screen(425px, 766px) {
+        @include screen(425px, 768px) {
           margin-right: 0;
           padding: 1.6rem 0rem 0rem 0rem;
         }
-        @include screen(767px, 1023px) {
-          margin-right: 0;
-          padding: 1.5rem 0rem 0rem 0rem;
+        @include screen(769px, 1023px) {
+          //margin-right: 0;
+          //padding: 1.5rem 0rem 0rem 0rem;
+          margin: 0.5rem -2rem;
+          padding: 0;
         }
-        @include screen(320px, 375px) {
+        @include screen(320px, 424px) {
           padding: 27px 10px 0 0px;
         }
         &:hover {
@@ -176,7 +178,7 @@ header.banner {
           background-position: 97% 50%;
           background-size: 4%; //background-size: 4%;
           border-radius: 5rem;
-          @include mq($max-width: 768px) { 
+          @include mq($max-width: 766px) { 
             background-size: 3%;
             width: 100%;
           }
@@ -201,18 +203,18 @@ header.banner {
           margin-top: $base-margin * 0;
           float: none;
         }
-        @include screen(425px, 766px) {
+        @include screen(425px, 1023px) {
           margin-right: 0;
           margin-left: $base-margin * 2;
           margin-top: 0;
           float: none;
         }
-        @include screen(767px, 1023px) {
+       /* @include screen(800px, 1023px) {
           margin-right: 0;
           margin-left: $base-margin * 6;
           margin-top: 0;
           float: none;
-        }
+        }*/
         a {
           &:first-child {
             border-right: $base-border;
@@ -239,13 +241,13 @@ header.banner {
           }
 
           &.my-accountText {
-            @include mq($max-width: 768px) {
+            @include mq($max-width: 1023px) {
               display: none;
             }
           }
           &.icon-account {
             display: none;
-            @include mq($max-width: 768px) {
+            @include mq($max-width: 1023px) {
               display: inherit;
               font-size: $base-font-size * 1.5;
             }
