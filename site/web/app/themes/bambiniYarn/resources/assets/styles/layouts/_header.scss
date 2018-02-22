@@ -184,7 +184,7 @@ header.banner {
           }
           box-shadow: none;
         }
-        input[type="submit"] {
+        input[type="submit"], button[type="submit"] {
           display: none;
         }
       }
