@@ -143,7 +143,7 @@ header.banner {
           margin-right: 0;
         }
       }
-      .woocommerce-product-search {
+      .woocommerce-product-search, .aws-search-form {
         display: inline-block;
         width: 100%; //width: 300px;
         margin-left: $base-margin * 6;
@@ -173,11 +173,12 @@ header.banner {
           box-sizing: border-box;
           width: 80%;
           height: 40px; // margin-bottom: $base-margin; // padding-left: $base-padding * 3;
+          background-color: #fff;
           background-image: url('../images/search.svg');
           background-repeat: no-repeat;
           background-position: 97% 50%;
           background-size: 4%; //background-size: 4%;
-          border-radius: 5rem;
+          border-radius: 5rem !important;
           @include mq($max-width: 766px) { 
             background-size: 3%;
             width: 100%;

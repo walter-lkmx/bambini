@@ -15,9 +15,10 @@
                 </div>
             </a>
             {{-- <a href="/catalogo" title="">Catálogo</a> --}}
-            <?php
+            <!--?php
                 get_product_search_form();
-            ?> 
+            ?--> 
+           <?php echo do_shortcode( '[aws_search_form]' ); ?>
         </nav>
         <nav class="nav-secondary">
             <a class="icon-account" href="/blog" title=""><i class="icons8-comments"></i></a>
