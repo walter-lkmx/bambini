@@ -15,7 +15,7 @@ header.banner {
       margin-right: $base-margin * 2;
       background: $brand-grey-light;
       height: 60px;
-      @include mq($max-width: 768px) {
+      @include mq($max-width: 766px) {
         margin-right: 0;
       }
       img {
@@ -39,7 +39,7 @@ header.banner {
         margin-right: 2rem;
         display: inline-block;
         font-size: 0;
-        @include mq($max-width: 768px) {
+        @include mq($max-width: 766px) {
           height: 35px;
           padding-top: $base-padding;
           margin-top: 0.5rem;
@@ -70,11 +70,11 @@ header.banner {
         padding: 9px 10px 0 0;
         position: absolute;
         top: 0;
-        @include screen(425px, 768px) {
+        @include screen(425px, 766px) {
           margin-right: 0;
           padding: 1.6rem 0rem 0rem 0rem;
         }
-        @include screen(769px, 1023px) {
+        @include screen(767px, 1023px) {
           //margin-right: 0;
           //padding: 1.5rem 0rem 0rem 0rem;
           margin: 0.5rem -2rem;
@@ -86,7 +86,7 @@ header.banner {
         &:hover {
           text-decoration: none;
           background-color: rgba(black, 0.4);
-          @include mq($max-width: 768px) {
+          @include mq($max-width: 766px) {
             background-color: transparent;
           }
           @include mq($max-width: 375px) {
@@ -95,7 +95,7 @@ header.banner {
         }
         img {
           width: 25px;
-          @include mq($max-width: 768px) {
+          @include mq($max-width: 766px) {
             width: 20px;
           }
           @include mq($max-width: 375px) {
@@ -104,7 +104,7 @@ header.banner {
         }
         span {
           display: block;
-          @include mq($max-width: 768px) {
+          @include mq($max-width: 766px) {
             display: none;
           }
           @include mq($max-width: 375px) {
