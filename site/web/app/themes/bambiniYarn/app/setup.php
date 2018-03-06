@@ -186,4 +186,10 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
     
 }
 
+add_filter( 'query', __NAMESPACE__ . '\\fix_ajax_query');
+function fix_ajax_query( $query ) {
+$pattern = '/^\s*(START TRANSACTION|COMMIT|ROLLBACK)/i';
+return preg_match( $pattern, $query ) ? '' : $query;
+}
+
 
