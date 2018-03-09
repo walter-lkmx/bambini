@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ad70181c4c9ed5421521747a6a18249",
+    "content-hash": "59129071a7a0eb3f1346d27b86e42bbb",
     "packages": [
         {
             "name": "bambini/open-pay-spec",
@@ -398,6 +398,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/advanced-woo-search",
+            "version": "1.36",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-woo-search/",
+                "reference": "tags/1.36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-woo-search.1.36.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-woo-search/"
+        },
+        {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
             "version": "1.7.2",
             "source": {
@@ -419,15 +439,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "5.8",
+            "version": "5.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/5.8"
+                "reference": "tags/5.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.9.zip",
                 "reference": null,
                 "shasum": null
             },
