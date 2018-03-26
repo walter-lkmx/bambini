@@ -55,22 +55,26 @@
     text-align: left;
     z-index: 9999999999999;
     background: #fff;
-    //width: 100%;
+    width: 100%;
     margin-top: -1px;
     border: 1px solid #ccc;
     font-size: 12px;
     line-height: 16px;
     border-radius: 1rem;
     top: 49.5px !important;
-    left: 398px !important;
-    width: 38.5% !important;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    display: block;
+    width: 515px !important;
+    /*left: 0 !important;
+    right: 0 !important;*/
     @include mq($max-width: 766px) {
         top: 107.5px !important;
         left: 0 !important;
         width: 100% !important;
     }
     @include screen(767px, 934px) {
-          left: 337px !important;
+          left: 335px !important;
           width: 237px !important;
     }
     @include screen(935px, 1023px) {
@@ -81,9 +85,16 @@
           left: 398px !important;
           width: 35% !important;
     }
-    @include mq($min-width: 1296px) {
-          right: 100px !important;
-          width: 35% !important;
+    @include screen(1150px, 1296px) {
+          left: 392px !important;
+          width: 39% !important;
+    }
+    @include mq($min-width: 1297px) {
+          left: 0 !important;
+          right: 0 !important;
+          width: 39% !important;
+          margin-right: auto !important;
+          margin-left: auto !important;
     }
     ul {
         list-style: none;
