@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "77ac7eb81a440f9a4d9d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "83d38b02581214ff462e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(58)(__webpack_require__.s = 58);
+/******/ 	return hotCreateRequire(59)(__webpack_require__.s = 59);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2234,8 +2234,7 @@ module.exports = function(module) {
 /* 22 */,
 /* 23 */,
 /* 24 */,
-/* 25 */,
-/* 26 */
+/* 25 */
 /* unknown exports provided */
 /* all exports used */
 /*!*******************************!*\
@@ -2255,6 +2254,7 @@ wp.customize('blogname', function (value) {
 
 
 /***/ }),
+/* 26 */,
 /* 27 */,
 /* 28 */,
 /* 29 */,
@@ -2286,7 +2286,8 @@ wp.customize('blogname', function (value) {
 /* 55 */,
 /* 56 */,
 /* 57 */,
-/* 58 */
+/* 58 */,
+/* 59 */
 /* unknown exports provided */
 /* all exports used */
 /*!*********************************************************************************************!*\
@@ -2295,7 +2296,7 @@ wp.customize('blogname', function (value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! webpack-hot-middleware/client?timeout=20000&reload=true */2);
-module.exports = __webpack_require__(/*! ./scripts/customizer.js */26);
+module.exports = __webpack_require__(/*! ./scripts/customizer.js */25);
 
 
 /***/ })
