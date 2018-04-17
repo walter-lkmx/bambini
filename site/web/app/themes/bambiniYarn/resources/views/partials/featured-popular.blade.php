@@ -1,6 +1,3 @@
-<div class="sidebar">
-  @include('partials.sidebar') 
-</div>
 <div class="featured-products">
     <h3>Lo más popular</h3>
     <?php
