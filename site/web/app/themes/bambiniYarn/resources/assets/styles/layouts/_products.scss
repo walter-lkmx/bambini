@@ -20,7 +20,7 @@ ul.products {
   li {
     // background: lightgreen;
     box-sizing: border-box;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     @include mq($max-width: 375px) {
       width: calc(100% / 2);
     }
@@ -31,6 +31,7 @@ ul.products {
     overflow: hidden;
     border-right: $base-border; // border-style: dashed;
     border-color: rgba($brand-dark, .2);
+    padding: $base-padding * 1.2;
     @include mq($max-width: 375px) {
       &:nth-child(2n+2) {
         border-right: 0;
@@ -40,13 +41,14 @@ ul.products {
         clear: both;
       }
     }
-    &:nth-child(4n+4) {
+    &:nth-child(6n+6) {
       // float: right;
       // margin-right: 0;
       border-right: 0;
       clear: right;
+      display: none;
     }
-    &:nth-child(4n+1) {
+    &:nth-child(6n+1) {
       clear: both;
     }
     &:last-child {
@@ -56,7 +58,7 @@ ul.products {
       font-size: $base-font-size;
       font-weight: $base-font-weight-light;
       color: $brand-dark;
-      margin-bottom: $base-margin;
+      //margin-bottom: $base-margin;
       width: 70%;
       min-height: 48px;
       max-height: 48px;
@@ -71,7 +73,8 @@ ul.products {
       img {
         @extend .vertical-centering;
         width: auto;
-        height: 80%;
+        //height: 80%;
+        height: 90%;
         margin-bottom: $base-margin;
       }
     } // on sale badge
