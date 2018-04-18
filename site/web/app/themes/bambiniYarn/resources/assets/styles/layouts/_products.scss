@@ -21,7 +21,7 @@ ul.products {
     // background: lightgreen;
     box-sizing: border-box;
     width: calc(100% / 3);
-    @include mq($max-width: 375px) {
+    @include mq($max-width: 768px) {
       width: calc(100% / 2);
     }
     margin-bottom: $base-margin * 2;
@@ -31,8 +31,7 @@ ul.products {
     overflow: hidden;
     border-right: $base-border; // border-style: dashed;
     border-color: rgba($brand-dark, .2);
-    padding: $base-padding * 1.2;
-    @include mq($max-width: 375px) {
+    @include mq($max-width: 768px) {
       &:nth-child(2n+2) {
         border-right: 0;
         clear: right;
@@ -41,11 +40,15 @@ ul.products {
         clear: both;
       }
     }
-    &:nth-child(6n+6) {
+    &:nth-child(3n+3) {
       // float: right;
       // margin-right: 0;
       border-right: 0;
       clear: right;
+      @include mq($max-width: 768px) {
+        border-right: $base-border;
+        border-color: rgba($brand-dark, .2);
+      }
     }
     &:nth-child(6n+1) {
       clear: both;

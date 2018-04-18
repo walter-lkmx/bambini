@@ -156,9 +156,13 @@
     margin: auto;
     padding-bottom: $base-padding * 4;
     .featured-products {
-      width: 75%;
+      width: 70%;
       margin-bottom: $base-margin * 4;
       margin-left: 0;
+      display: inline-block;
+      @include mq($max-width: 768px) {
+      width: 100%;
+      }
       @extend .vertical-centering;
       h3 {
         //margin-bottom: $base-margin * 2;
