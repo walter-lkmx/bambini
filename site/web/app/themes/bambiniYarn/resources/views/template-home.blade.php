@@ -15,10 +15,10 @@
     </div>
     <div class="products-content">
       <aside class="sidebar">
-        <img src="@asset('images/espacio1.jpg')">
-        <img src="@asset('images/espacio2.jpg')">
-        <img src="@asset('images/espacio3.jpg')">
-        <img src="@asset('images/espacio4.jpg')">
+        <!--img src="@asset('images/')">
+        <img src="@asset('images/')">
+        <img src="@asset('images/')">
+        <img src="@asset('images/')"-->
       </aside>
       {{-- @include('partials.featured-recommended') --}}
       @include('partials.featured-popular')
