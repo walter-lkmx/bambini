@@ -1,11 +1,8 @@
 .sidebar {
     width: 25%;
-    //width: 310px;
     float: right;
     display: inline-block;
     height: auto;
-    /*background-color: $brand-white;
-    margin-left: $base-margin * 1.875;*/
     color: $brand-dark;
     @include mq($max-width: 766px) {
         display: none;
