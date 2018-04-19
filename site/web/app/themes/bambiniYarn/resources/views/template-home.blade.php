@@ -14,17 +14,17 @@
         </div>
     </div>
     <div class="products-content">
-      <aside class="sidebar">
-        <!--img src="@asset('images/')">
-        <img src="@asset('images/')">
-        <img src="@asset('images/')">
-        <img src="@asset('images/')"-->
-      </aside>
       {{-- @include('partials.featured-recommended') --}}
       @include('partials.featured-popular')
       {{-- @include('partials.featured-trending') --}}
       @include('partials.content-page')
     @endwhile
+    <aside class="sidebar">
+        <!--img src="@asset('images/')">
+        <img src="@asset('images/')">
+        <img src="@asset('images/')">
+        <img src="@asset('images/')"-->
+      </aside>
     </div>
   @include('partials.useful-info')
 @endsection
