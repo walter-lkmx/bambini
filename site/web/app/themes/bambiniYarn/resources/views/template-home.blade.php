@@ -24,7 +24,7 @@
         <img src="@asset('images/espacio.jpg')">
         <img src="@asset('images/espacio.jpg')">
         <img src="@asset('images/espacio.jpg')">
-      </aside>
+    </aside>
     </div>
   @include('partials.useful-info')
 @endsection
