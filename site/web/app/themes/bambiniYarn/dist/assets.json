@@ -12,10 +12,7 @@
   "images/body-pattern.svg": "images/body-pattern_8546dad0.svg",
   "images/certified.svg": "images/certified_9818561e.svg",
   "images/close.png": "images/close_d9d2d0b1.png",
-  "images/espacio-1.jpg": "images/espacio-1_c9f8c8cc.jpg",
-  "images/espacio-2.jpg": "images/espacio-2_743358a0.jpg",
-  "images/espacio-3.jpg": "images/espacio-3_37af151a.jpg",
-  "images/espacio-4.jpg": "images/espacio-4_680cafb5.jpg",
+  "images/espacio.jpg": "images/espacio_1c34b4e6.jpg",
   "images/gracias-h.svg": "images/gracias-h_88a58588.svg",
   "images/gracias-v.png": "images/gracias-v_21df94ee.png",
   "images/gracias-v.svg": "images/gracias-v_0bc26748.svg",
@@ -46,7 +43,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_d77725c0.js",
-  "styles/main.css": "styles/main_d77725c0.css",
-  "scripts/main.js": "scripts/main_d77725c0.js"
+  "scripts/customizer.js": "scripts/customizer_b2dfaee3.js",
+  "styles/main.css": "styles/main_b2dfaee3.css",
+  "scripts/main.js": "scripts/main_b2dfaee3.js"
 }
