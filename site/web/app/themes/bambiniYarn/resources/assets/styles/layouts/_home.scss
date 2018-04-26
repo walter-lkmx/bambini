@@ -157,7 +157,7 @@
     padding-bottom: $base-padding * 4;
     position: relative;
     .featured-products {
-      width: 70%;
+      width: 74%;
       margin-bottom: $base-margin * 4;
       margin-left: 0;
       display: inline-block;
@@ -185,10 +185,12 @@
       }
       img {
         width: 100%;
+        margin-bottom: $base-margin;
         @include mq($max-width: 768px) {
           width: 49%;
           display: inline-block;
           padding: $base-padding;
+          margin-bottom: 0;
         }
       }
       @include mq($max-width: 768px) {

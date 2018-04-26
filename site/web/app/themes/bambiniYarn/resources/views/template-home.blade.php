@@ -20,10 +20,10 @@
       @include('partials.content-page')
     @endwhile
     <aside class="sidebar">
-        <!--img src="@asset('images/')">
-        <img src="@asset('images/')">
-        <img src="@asset('images/')">
-        <img src="@asset('images/')"-->
+        <img src="@asset('images/espacio.jpg')">
+        <img src="@asset('images/espacio.jpg')">
+        <img src="@asset('images/espacio.jpg')">
+        <img src="@asset('images/espacio.jpg')">
       </aside>
     </div>
   @include('partials.useful-info')
