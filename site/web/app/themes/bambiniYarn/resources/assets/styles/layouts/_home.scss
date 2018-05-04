@@ -4,7 +4,7 @@
     padding: 0;
   }
   .welcome {
-    background-image: url('../images/welcome-pattern.svg'), radial-gradient(50% 150%, #efefef 50%, #d5d5d5 100%);
+    background-image: url('../images/welcome-pattern2.svg'), radial-gradient(50% 150%, $brand-blue-sky 50%, $brand-twitter 100%);
     background-size: 90%;
     background-position: center;
     background-repeat: repeat;
@@ -30,7 +30,112 @@
       padding-right: $base-padding;
       padding-top: $base-padding * 1.5;
       @extend .vertical-centering;
+      // SLIDER - SECOND TEMPLATE
       .slider {
+        position: relative;
+        float: left; // padding: $base-padding;
+        box-sizing: border-box;
+        width: 70%;
+        height: 500px;
+        //margin-bottom: $base-margin * 4;
+        @include screen(320px, 567px) {
+          height: 150px;
+        }
+        @include screen(568px, 799px) {
+          height: 350px;
+        }
+        @include screen(800px, 1099px) {
+          height: 400px;
+        }
+        img {
+          &.certified {
+            width: 6rem;
+            position: absolute; 
+            @include screen(320px, 567px) {
+              width: 2rem;
+              top: 0;
+              right: 0.5rem;
+            }
+            @include screen(568px, 768px) {
+              width: 4rem;
+              top: -4rem;
+              right: 0rem;
+            }
+            //top: -4rem;
+            right: 1rem;
+          }
+        }
+      }
+      // SEARCH-BOX SECOND TEMPLATE
+      .search-box {
+        float: right;
+        box-sizing: border-box;
+        width: 30%;
+        height: 600px;
+        @include screen(320px, 425px) {
+          height: 150px;
+        }
+        padding: $base-padding;
+        @include screen(320px, 375px) {
+          padding: 0;
+        }
+        .container {
+          background-color: $brand-primary;
+        background-image: url('../images/welcome-pattern3.svg');
+        background-size: 90%;
+        background-position: center;
+        background-repeat: repeat;
+          top: 45% !important;
+          position: relative;
+          height: 600px;
+          @include vertical-align;
+          img {
+            width: 90%;
+          }
+          h2, h3, h4 {
+            color: white;
+            text-align: center;
+            span {
+              color: $brand-blue-sky;
+            }
+          }
+          h3 {
+            margin-bottom: $base-margin;
+            font-size: $base-font-size * 1.7;
+            margin-bottom: $base-margin * 2;
+            //line-height: .5;
+            @include mq($max-width: 768px) {
+              line-height: 1;
+            }
+            @include screen(320px, 424px) {
+              margin-bottom: 0.6rem;
+                font-size: $base-font-size * 0.7;
+                padding-left: $base-padding;
+                line-height: 1.2;
+            }
+            @include screen(425px, 667px) {
+              font-size: $base-font-size * 1.2; 
+              margin-bottom: 0.5rem;
+            }
+            .first-line {
+              padding-left: $base-padding * 2;
+              display: block;
+              padding-bottom: $base-padding;
+              @include mq($max-width: 768px) {
+                padding-bottom: 0; 
+                padding-left: 0;
+                display: inline;
+              }
+              @include mq($max-width: 375px) {
+                padding-left: 0;
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+      // ORIGINAL TEMPLATE
+      /*.slider {
         position: relative;
         float: left; // padding: $base-padding;
         box-sizing: border-box;
@@ -45,6 +150,24 @@
         }
         @include screen(800px, 1099px) {
           height: 400px;
+        }
+        img {
+          &.certified {
+            width: 6rem;
+            @include screen(320px, 567px) {
+              width: 3rem;
+              top: -1rem;
+              right: 0rem;
+            }
+            @include screen(568px, 768px) {
+              width: 4rem;
+              top: -4rem;
+              right: 0rem;
+            }
+            position: absolute; 
+            //top: -4rem;
+            //right: 1rem;
+          }
         }
       }
       .search-box {
@@ -144,7 +267,7 @@
             }
           }
         }
-      }
+      }*/
     }
   }
   .products-content {

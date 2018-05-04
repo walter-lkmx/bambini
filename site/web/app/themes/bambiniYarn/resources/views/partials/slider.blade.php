@@ -4,7 +4,7 @@
     <div class="promos"> 
         <ul>
             <li>
-                <img src="@asset('images/bamb-s01.png')" alt="bambini.club">
+                <img src="@asset('images/envios-gratis.png')" alt="bambini.club">
                 {{-- <h3>Lorem ipsum</h3> --}}
             </li>
             <li>
@@ -16,5 +16,6 @@
                 {{-- <h3>consectetur adipiscing</h3> --}} 
             </li>
         </ul>
+        <img class="certified" src="@asset('images/certified.svg')" alt=""> 
     </div>
 </div>
