@@ -12,7 +12,7 @@
     height: 550px;
     margin-bottom: $base-margin * 4;
     @include screen(320px, 424px) {
-      height: 200px;
+      height: 430px;
     }
     @include screen(425px, 567px) {
       height: 200px;
@@ -29,6 +29,10 @@
       padding-left: $base-padding;
       padding-right: $base-padding;
       padding-top: $base-padding * 1.5;
+      @include screen(320px, 424px) {
+        padding-right: 0;
+        padding-left: 0;
+      }
       @extend .vertical-centering;
       // SLIDER - SECOND TEMPLATE
       .slider {
@@ -38,7 +42,12 @@
         width: 70%;
         height: 500px;
         //margin-bottom: $base-margin * 4;
-        @include screen(320px, 567px) {
+        @include screen(320px, 424px) {
+          width: 100%;
+          display: block;
+          height: 230px;
+        }
+        @include screen(425px, 567px) {
           height: 150px;
         }
         @include screen(568px, 799px) {
@@ -51,14 +60,19 @@
           &.certified {
             width: 6rem;
             position: absolute; 
-            @include screen(320px, 567px) {
+            @include screen(320px, 424px) {
+              width: 2rem;
+              top: 0;
+              right: 1rem;
+            }
+            @include screen(425px, 567px) {
               width: 2rem;
               top: 0;
               right: 0rem;
             }
             @include screen(568px, 768px) {
               width: 4rem;
-              top: -4rem;
+              top: 0rem;
               right: 0rem;
             }
             //top: -4rem;
@@ -72,8 +86,11 @@
         box-sizing: border-box;
         width: 30%;
         height: 600px;
-        @include screen(320px, 425px) {
-          height: 150px;
+        @include screen(320px, 424px) {
+          width: 100%;
+          display: block;
+          height: 185px;
+          padding: 0;
         }
         padding: $base-padding;
         @include screen(320px, 375px) {
@@ -89,16 +106,35 @@
           position: relative;
           height: 600px;
           @include vertical-align;
-          @include screen(320px, 425px) {
+          @include screen(320px, 424px) {
             height: 200px;
-            padding: $base-margin * 0.7 $base-margin * 0.5;
+            padding: $base-padding * 2;
             top: 55% !important;
           }
-          img {
-            width: 85%;
+          div.product-image {
+            width: 100%;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+              margin-left: auto;
+              margin-right: auto;
+            @include screen(320px, 424px) {
+              width: 50%;
+              display: inline-block;
+              position: absolute;
+              top: 1rem;
+              right: 0;
+              text-align: center;
+            }
+            img {
+              width: 85%;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              @include screen(320px, 424px) {
+                top: 0;
+                right: 0;
+                width: 60%;
+              }
+            }
           }
           h2, h3, h4 {
             color: white;
@@ -108,6 +144,7 @@
               @include screen(320px, 567px) {
                 padding-left: 0;
                 text-align: center;
+                color: $brand-blue-sky;
               }
             }
             @include screen(320px, 567px) {
@@ -123,7 +160,14 @@
             @include mq($max-width: 768px) {
               line-height: 1;
             }
-            @include screen(320px, 567px) {
+            @include screen(320px, 424px) {
+              margin-bottom: 0.6rem;
+              font-size: $base-font-size * 1.3;
+              width: 50%;
+              text-align: right;
+              display: inline-block;
+            }
+            @include screen(425px, 567px) {
               margin-bottom: 0.6rem;
               font-size: $base-font-size * 0.6;
               line-height: 1.2;
@@ -141,7 +185,14 @@
             @include mq($max-width: 768px) {
               line-height: 1;
             }
-            @include screen(320px, 567px) {
+            @include screen(320px, 424px) {
+              margin-bottom: 0.6rem;
+              font-size: $base-font-size;
+              width: 50%;
+              text-align: right;
+              display: inline-block;
+            }
+            @include screen(425px, 567px) {
               margin-bottom: 0.6rem;
                 font-size: $base-font-size * 0.4;
                 line-height: 1.2;
