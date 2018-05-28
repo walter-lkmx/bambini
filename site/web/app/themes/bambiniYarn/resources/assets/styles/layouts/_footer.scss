@@ -40,6 +40,9 @@ footer {
         color: $brand-white;
         margin-bottom: $base-margin / 1.5;
         font-size: $base-font-size - .1;
+        &.no-margin {
+          margin-bottom: $base-margin / 1.5 !important;
+        }
         a {
           color: $brand-white;
         }
@@ -57,6 +60,7 @@ footer {
         }
       }
       &.social {
+        margin-bottom: $base-margin - .3;
         li {
           display: inline-block;
           background-color: $brand-white;
@@ -71,6 +75,16 @@ footer {
           }
           &:first-child {
             margin-bottom: $base-margin / 3;
+          }
+        }
+      }
+      &.address {
+        color: white;
+        li {
+          margin-bottom: 0 !important;
+          font-size: $base-font-size - .5;
+          &:last-child {
+            line-height: 14px;
           }
         }
       }

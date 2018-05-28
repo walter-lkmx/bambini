@@ -19,10 +19,11 @@
             <li><a href="/facturacion" target="_blank">Facturación</a></li>
         </ul>
         <ul>
-            <li>Ayuda</li>
+            <li class="no-margin">Ayuda</li>
+            <li><a href="/conocenos" target="_blank">Conócenos</a></li>
             <li>Centro de ayuda</li>
             <!--<li>Formas de pago</li>-->
-            <li><a href="/contacto" target="_blank">Contacto</a></li>
+            <li><a href="/contacto" target="_blank">Contáctanos</a></li>
         </ul>
         <ul>
             <li>Compra segura</li>
@@ -36,6 +37,9 @@
             <li><a href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
             <li><a href="https://www.instagram.com/bambini.club.store/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
+        <ul class="address">
+        <li>Propiedad intelectual © 2007-2018 Conversiones.</li>
+        <li>Paseo Estrella del Mar #1075, Loc 1 A, 22500. Playas de Tijuana, Baja California, México.</li></ul>
     </div>
 </footer>
 
