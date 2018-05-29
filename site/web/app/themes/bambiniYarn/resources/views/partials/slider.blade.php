@@ -4,7 +4,7 @@
     <div class="promos"> 
         <ul>
             <li>
-                <img src="@asset('images/dia-madres.png')" alt="bambini.club">
+                <img src="@asset('images/hot-sale.png')" alt="bambini.club">
                 {{-- <h3>Lorem ipsum</h3> --}}
             </li>
             <li>

@@ -24,6 +24,7 @@
   "images/gracias-v.png": "images/gracias-v_21df94ee.png",
   "images/gracias-v.svg": "images/gracias-v_0bc26748.svg",
   "images/horarios.png": "images/horarios_eb39d037.png",
+  "images/hot-sale.png": "images/hot-sale_5edcd85e.png",
   "images/loading.gif": "images/loading_2299ad0b.gif",
   "images/logo-inverted.svg": "images/logo-inverted_ba475cf3.svg",
   "images/logo.jpg": "images/logo_ac42b1c5.jpg",
@@ -54,7 +55,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_72f2d5b5.js",
-  "styles/main.css": "styles/main_72f2d5b5.css",
-  "scripts/main.js": "scripts/main_72f2d5b5.js"
+  "scripts/customizer.js": "scripts/customizer_e1e2cd83.js",
+  "styles/main.css": "styles/main_e1e2cd83.css",
+  "scripts/main.js": "scripts/main_e1e2cd83.js"
 }
