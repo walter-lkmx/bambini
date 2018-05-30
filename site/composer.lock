@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "59129071a7a0eb3f1346d27b86e42bbb",
+    "content-hash": "6babdbf22e7a2b0e1be232f3457a2361",
     "packages": [
         {
             "name": "bambini/open-pay-spec",
@@ -399,15 +399,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-woo-search",
-            "version": "1.36",
+            "version": "1.42",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/advanced-woo-search/",
-                "reference": "tags/1.36"
+                "reference": "tags/1.42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-woo-search.1.36.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-woo-search.1.42.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -418,16 +418,36 @@
             "homepage": "https://wordpress.org/plugins/advanced-woo-search/"
         },
         {
-            "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
-            "version": "1.7.2",
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "5.0.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
-                "reference": "tags/1.7.2"
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
+            "version": "1.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
+                "reference": "tags/1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -459,15 +479,15 @@
         },
         {
             "name": "wpackagist-plugin/popup-maker",
-            "version": "1.6.6",
+            "version": "1.7.22",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/popup-maker/",
-                "reference": "tags/1.6.6"
+                "reference": "tags/1.7.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.6.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.7.22.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -487,7 +507,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1510899133",
+                "url": "https://downloads.wordpress.org/plugin/smtp-mailer.zip?timestamp=1519627206",
                 "reference": null,
                 "shasum": null
             },
@@ -519,7 +539,7 @@
         },
         {
             "name": "wpackagist-plugin/webappick-product-feed-for-woocommerce",
-            "version": "2.2.7",
+            "version": "2.2.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/webappick-product-feed-for-woocommerce/",
@@ -527,7 +547,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/webappick-product-feed-for-woocommerce.zip?timestamp=1519920089",
+                "url": "https://downloads.wordpress.org/plugin/webappick-product-feed-for-woocommerce.zip?timestamp=1527144505",
                 "reference": null,
                 "shasum": null
             },
@@ -579,15 +599,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.9.3",
+            "version": "7.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.9.3"
+                "reference": "tags/7.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.9.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.5.3.zip",
                 "reference": null,
                 "shasum": null
             },

@@ -87,11 +87,12 @@
     "wpackagist-plugin/smtp-mailer": "^1.0.3",
     "wpackagist-plugin/woocommerce-display-products-by-tags": "^1.0.0",
     "wpackagist-plugin/typekit-fonts-for-wordpress": "^1.8.4",
-    "wpackagist-plugin/wordpress-seo": "^5.8",
+    "wpackagist-plugin/wordpress-seo": "^7.0",
     "wpackagist-plugin/webappick-product-feed-for-woocommerce": "^2.1.24",
     "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.7.1",
     "wpackagist-plugin/popup-maker": "^1.6.6",
     "wpackagist-plugin/jetpack": "^5.6",
+    "wpackagist-plugin/contact-form-7": "5.0.2",
     "wpackagist-plugin/advanced-woo-search": "^1.36",
     "bambini/open-pay-spec": "2.2.13"
   },

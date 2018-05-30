@@ -1,0 +1,37 @@
+.contact {
+	.entry-summary {
+		display: inline-block;
+		background-color: $brand-primary;
+		color: #fff;
+		padding: $base-padding * 1.625;
+		width: 40%;
+		vertical-align: top;
+		@include screen(320px, 767px) {
+          width: 100%;
+          display: block;
+        }
+        p {
+        	a {
+        		color: #fff;
+        	}
+        }
+	}
+	.contact-form-side {
+		display: inline-block;
+		padding-left: $base-padding * 1.625;
+		width: 59%;
+		vertical-align: top;
+		label {
+			span {
+				input, textarea {
+					width: 100%;
+				}
+			}
+		}
+		@include screen(320px, 767px) {
+          width: 100%;
+          display: block;
+          padding-left: 0;
+        }
+	}
+}
