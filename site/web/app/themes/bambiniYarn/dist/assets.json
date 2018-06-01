@@ -29,6 +29,7 @@
   "images/logo-inverted.svg": "images/logo-inverted_ba475cf3.svg",
   "images/logo.jpg": "images/logo_ac42b1c5.jpg",
   "images/logo.svg": "images/logo_10865c49.svg",
+  "images/mapa.png": "images/mapa_468d6c87.png",
   "images/menu-close.svg": "images/menu-close_4cc0f4ec.svg",
   "images/menu-hamburger.svg": "images/menu-hamburger_d7e06534.svg",
   "images/next.png": "images/next_31f15875.png",
@@ -55,7 +56,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_e50337b9.js",
-  "styles/main.css": "styles/main_e50337b9.css",
-  "scripts/main.js": "scripts/main_e50337b9.js"
+  "scripts/customizer.js": "scripts/customizer_5332a956.js",
+  "styles/main.css": "styles/main_5332a956.css",
+  "scripts/main.js": "scripts/main_5332a956.js"
 }

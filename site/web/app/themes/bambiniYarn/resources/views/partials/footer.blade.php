@@ -26,7 +26,7 @@
             <li><a href="/contacto" target="_blank">Contáctanos</a></li>
         </ul>
         <ul>
-            <li>Compra segura</li>
+            <li><a href="/compra-segura" target="_blank">Compra segura</a></li>
             <li><a href="/terminos-y-condiciones" target="_blank">Términos y condiciones</a></li>
             <li><a href="/politica-de-privacidad" target="_blank">Política de privacidad</a></li>
         </ul>

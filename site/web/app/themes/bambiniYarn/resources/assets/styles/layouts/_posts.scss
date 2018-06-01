@@ -381,6 +381,21 @@ body.blog {
 				list-style-type: decimal;
 			}
 		}
+		div.sd-sharing-enabled {
+			div.sd-sharing {
+				h3.sd-title {
+					font-size: $base-font-size !important;
+					&::before {
+						border: 0 !important;
+					}
+				}
+				div.sd-content {
+					ul {
+						text-align: center !important;
+					}
+				}
+			}
+		}
 		div.category-list {
 			padding: $base-padding * 5 0 $base-padding * 2;
 			text-align: left;
