@@ -11,6 +11,52 @@
             padding-bottom: $base-padding;
         }
     }
+    .woocommerce {
+        form.woocommerce-cart-form {
+            table {
+                thead {
+
+                }
+                tbody {
+                    tr {
+                        td.actions {
+                            div.coupon {
+                                button {
+                                    border-color: $brand-dark;
+                                    color: $brand-dark;
+                                    &:hover {
+                                        background-color: darken(white, 10%);
+                                    }
+                                }
+                            }
+                            button.button {
+                                border-color: $brand-primary;
+                                color: $brand-primary;
+                                &:hover {
+                                    background-color: darken(white, 10%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.cart-collaterals {
+            div.cart_totals {
+                table {
+                    tbody {
+                        tr {
+                            &.shipping {
+                                input[type="radio"] {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .woocommerce-message {
         display: none;
     }

@@ -19,6 +19,27 @@
       {{-- @include('partials.featured-trending') --}}
       @include('partials.content-page')
     @endwhile
+    <?php 
+      $related_args = array(
+        'orderby' => 'rand',
+        'post_type' => 'post',
+        'posts_per_page' => 4,
+      );
+      $related = new WP_Query( $related_args );
+      if( $related->have_posts() ) :
+    ?>
+    <div class="post-navigation">
+      <h3>Te recomendamos leer</h3>
+      <ul class="related">
+        <?php while( $related->have_posts() ): $related->the_post(); ?>
+          <li>
+            <div class="related-image"><a href="{{ get_permalink() }}">{{ the_post_thumbnail() }}</a></div>
+            <a href="{{ get_permalink() }}">{{ the_title() }}</a>
+          </li>
+        <?php endwhile; ?>
+      </ul>
+    </div>
+    <?php endif; ?>
     <aside class="sidebar">
         <a href="http://bambini.club/mi-cuenta/" target="_blank"><img src="@asset('images/espacio1.png')"></a>
         <a href="http://bambini.club/producto/asientodecocheconvertiblecoscomightyfit65dxheathernavy/" target="_blank"><img src="@asset('images/espacio2.png')"></a>

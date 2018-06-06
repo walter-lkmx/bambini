@@ -40,20 +40,34 @@ endif-->
       @php(wp_list_categories('orderby&title_li='))
     </ul>
   </div>
-    <!--div>
+  <div>
+  <p>Artículos más vistos</p>
+    <ol class="popular">
+      <?php 
+        echo '<li><a href="' . get_permalink() . '">';
+        $popularpost = new WP_Query( array( 'posts_per_page' => 4, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+        while ( $popularpost->have_posts() ) : $popularpost->the_post();
+          echo the_title() . '</a></li><li><a href="' . get_permalink() . '">';
+        endwhile;
+      ?>
+      </a></li>
+    </ol>
+  </div>
+  <!--div>
   <p>Autores</p>
     <ul>
       php(wp_list_authors('exclude_admin=0&optioncount=1'))
     </ul>
-  </div-->
+  </div>
 
-  <!--h5>Por etiqueta <i class="fa fa-list" style="vertical-align: baseline;"></i></h5>
   <div>
+  <p>Por etiqueta</p>
     <ul>
       <p>php(get_the_tag_list())</p>
     </ul>
-  </div-->
-  <!--div>
+  </div>
+
+  <div>
   <p>Fechas</p>
     <ul>
       php(wp_get_archives('type=monthly'))

@@ -3,10 +3,10 @@
     <p>slider</p> --}}
     <div class="promos"> 
         <ul>
-            <li>
-                <img src="@asset('images/hot-sale.png')" alt="bambini.club">
+            <!--li>
+                <img src="asset('images/hot-sale.png')" alt="bambini.club">
                 {{-- <h3>Lorem ipsum</h3> --}}
-            </li>
+            </li-->
             <li>
                 <img src="@asset('images/carriolas-slider.png')" alt="bambini.club">
                 {{-- <h3>dolor sit amet</h3> --}}

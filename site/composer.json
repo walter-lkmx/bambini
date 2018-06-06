@@ -93,6 +93,7 @@
     "wpackagist-plugin/popup-maker": "^1.6.6",
     "wpackagist-plugin/jetpack": "^5.6",
     "wpackagist-plugin/contact-form-7": "5.0.2",
+    "wpackagist-plugin/wc-hide-shipping-methods": "1.3",
     "wpackagist-plugin/advanced-woo-search": "^1.36",
     "bambini/open-pay-spec": "2.2.13"
   },

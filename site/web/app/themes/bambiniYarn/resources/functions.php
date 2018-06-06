@@ -102,3 +102,64 @@ function get_excerpt( $count ) {
     $excerpt = '<p>'.$excerpt.'... </p>';
     return $excerpt;
 }
+
+function wpb_set_post_views($postID) {
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+//To keep the count accurate, lets get rid of prefetching
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+function wcr_related_posts($args = array()) {
+    global $post;
+
+    // default args
+    $args = wp_parse_args($args, array(
+        'post_id' => !empty($post) ? $post->ID : '',
+        'taxonomy' => 'category',
+        'limit' => 3,
+        'post_type' => !empty($post) ? $post->post_type : 'post',
+        'orderby' => 'date',
+        'order' => 'DESC'
+    ));
+
+    // check taxonomy
+    if (!taxonomy_exists($args['taxonomy'])) {
+        return;
+    }
+
+    // post taxonomies
+    $taxonomies = wp_get_post_terms($args['post_id'], $args['taxonomy'], array('fields' => 'ids'));
+
+    if (empty($taxonomies)) {
+        return;
+    }
+
+    // query
+    $related_posts = get_posts(array(
+        'post__not_in' => (array) $args['post_id'],
+        'post_type' => $args['post_type'],
+        'tax_query' => array(
+            array(
+                'taxonomy' => $args['taxonomy'],
+                'field' => 'term_id',
+                'terms' => $taxonomies
+            ),
+        ),
+        'posts_per_page' => $args['limit'],
+        'orderby' => $args['orderby'],
+        'order' => $args['order']
+    ));
+
+    include( locate_template('related-posts-template.php', false, false) );
+
+    wp_reset_postdata();
+}

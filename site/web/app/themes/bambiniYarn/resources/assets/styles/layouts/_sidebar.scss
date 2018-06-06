@@ -79,6 +79,13 @@
             }
             a {
             }
+            &.popular {
+                li {
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
         }
         ul {
             text-align: center;
