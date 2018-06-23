@@ -8,7 +8,7 @@
                 {{-- <h3>Lorem ipsum</h3> --}}
             </li-->
             <li>
-                <img src="@asset('images/carriolas-slider.png')" alt="bambini.club">
+                <img src="@asset('images/panaleras-slider.png')" alt="bambini.club">
                 {{-- <h3>dolor sit amet</h3> --}}
             </li>
             <li>

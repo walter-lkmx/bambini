@@ -116,6 +116,7 @@
             display: block;
               margin-left: auto;
               margin-right: auto;
+              //padding: $base-padding 0; -- PANALERA
             @include screen(320px, 424px) {
               width: 50%;
               display: inline-block;
@@ -125,14 +126,17 @@
               text-align: center;
             }
             img {
-              width: 85%;
+              //height: 16rem; --PANALERA
+              height: 21rem;
+              width: auto;
               display: block;
               margin-left: auto;
               margin-right: auto;
               @include screen(320px, 424px) {
                 top: 0;
                 right: 0;
-                width: 60%;
+                //height: 7rem; --PANALERA
+                height: 9rem;
               }
             }
           }
