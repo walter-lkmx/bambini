@@ -18,38 +18,45 @@ ul.products {
   border-right: $base-border;
   border-color: rgba($brand-dark, .2);
   li {
-    // background: lightgreen;
     box-sizing: border-box;
-    //width: calc(100% / 3);
-    width: 33%;
-    @include mq($max-width: 768px) {
-      width: calc(100% / 2);
-    }
+    width: 32%;
     margin-bottom: $base-margin * 2;
-    //float: left;
     display: inline-block;
     text-align: center;
     overflow: hidden;
     border-right: $base-border; // border-style: dashed;
     border-color: rgba($brand-dark, .2);
     height: 392px;
-    @include mq($max-width: 768px) {
+    @include screen(320px, 768px) {
+      width: 100%;
+      border-right: none;
       &:nth-child(2n+2) {
         border-right: 0;
         clear: right;
       }
+    }
+    @include screen(425px, 768px) {
       &:nth-child(2n+1) {
         clear: both;
       }
     }
-    &:nth-child(3n+3) {
-      // float: right;
-      // margin-right: 0;
-      border-right: 0;
-      clear: right;
-      @include mq($max-width: 768px) {
-        border-right: $base-border;
-        border-color: rgba($brand-dark, .2);
+    @include screen(769px, 1023px) {
+      width: calc(100% / 2.03);
+      &:nth-child(2n+1) {
+        border-color: rgba($brand-dark, .2) !important;
+      }
+      &:nth-child(2n+2) {
+        border-right: 0;
+        clear: right;
+      }
+      &:nth-child(3n+3) {
+        border-color: rgba($brand-dark, .2) !important;
+      }
+    }
+    @include mq($min-width: 1024px) {
+      &:nth-child(3n+3) {
+        border-right: 0;
+        clear: right;
       }
     }
     &:nth-child(6n+1) {

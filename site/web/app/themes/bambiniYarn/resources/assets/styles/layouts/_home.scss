@@ -132,12 +132,30 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
+// AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA CARRIOLA
               @include screen(320px, 424px) {
                 top: 0;
                 right: 0;
                 //height: 7rem; --PANALERA
                 height: 9rem;
               }
+              @include screen(425px, 549px) {
+                width: 4rem;
+                height: auto;
+              }
+              @include screen(550px, 567px) {
+                width: 5rem;
+                height: auto;
+              }
+              @include screen(568px, 767px) {
+                width: 7rem;
+                height: auto;
+              }
+              @include screen(768px, 1099px) {
+                width: 10rem;
+                height: auto;
+              }
+// FIN DE AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA CARRIOLA
             }
           }
           h2, h3, h4 {
@@ -368,14 +386,23 @@
         padding-bottom: $base-padding * 2;
         text-align: left;
         color: rgba($brand-dark, .8);
+        @include screen(320px, 424px) {
+          text-align: center;
+        }
       }
     }
     .post-navigation {
         background: rgba($brand-gray, 0.25);
         padding: $base-padding * 2;
+        @include screen(320px, 768px) {
+          margin-bottom: $base-margin * 4;
+        }
         h3 {
           margin-top: 0;
           margin-bottom: $base-margin;
+          @include screen(320px, 424px) {
+            text-align: center;
+          }
         }
         ul.related {
           list-style-type: none;
@@ -385,7 +412,18 @@
             width: 23%;
             vertical-align: top;
             text-align: center;
-            margin-right: $base-margin;
+            margin-right: 2%;
+            @include screen(320px, 567px) {
+              width: 100%;
+              display: block;
+              margin-bottom: $base-margin * 2;
+            }
+            @include screen(568px, 768px) {
+              width: 48%;
+              display: inline-block;
+              margin-bottom: $base-margin * 2;
+              margin-right: 0;
+            }
             &:nth-child(4) {
               margin-right: 0 !important;
             }
