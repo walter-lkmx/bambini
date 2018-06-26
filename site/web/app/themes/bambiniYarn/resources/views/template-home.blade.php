@@ -42,9 +42,9 @@
     <?php endif; ?>
     <aside class="sidebar">
         <a href="http://bambini.club/mi-cuenta/" target="_blank"><img src="@asset('images/espacio1.png')"></a>
-        <a href="http://bambini.club/producto/asientodecocheconvertiblecoscomightyfit65dxheathernavy/" target="_blank"><img src="@asset('images/espacio2.png')"></a>
-        <a href="http://bambini.club/contacto/" target="_blank"><img src="@asset('images/espacio3.png')"></a>
-        <a href="http://bambini.club/page/5/?s=carriolas%20dobles&post_type=product&type_aws=true" target="_blank"><img src="@asset('images/espacio4.png')"></a>
+        <a href="http://bambini.club/producto/skiphopgreenwichbolsadepaalessimplychicparamochilasrosepolvorienta/" target="_blank"><img src="@asset('images/espacio-2.png')"></a>
+        <a href="http://bambini.club/contacto/" target="_blank"><img src="@asset('images/espacio-3.png')"></a>
+        <a href="http://bambini.club/producto/skiphoppaquetedepaalesconpaqueteexclusivode6piezasblush/ " target="_blank"><img src="@asset('images/espacio-4.png')"></a>
     </aside>
     </div>
   @include('partials.useful-info')
