@@ -45,6 +45,8 @@
         <a href="http://bambini.club/producto/skiphopgreenwichbolsadepaalessimplychicparamochilasrosepolvorienta/" target="_blank"><img src="@asset('images/espacio-2.png')"></a>
         <a href="http://bambini.club/contacto/" target="_blank"><img src="@asset('images/espacio-3.png')"></a>
         <a href="http://bambini.club/producto/skiphoppaquetedepaalesconpaqueteexclusivode6piezasblush/ " target="_blank"><img src="@asset('images/espacio-4.png')"></a>
+        <a href="http://bambini.club/producto/panalera-lequeen-mochila-naranja/" target="_blank"><img src="@asset('images/espacio-5.png')"></a>
+        <a href="http://bambini.club/producto/panalera-living-traveling-share-mochila-ejercito-verde/" target="_blank"><img src="@asset('images/espacio-6.png')"></a>
     </aside>
     </div>
   @include('partials.useful-info')
