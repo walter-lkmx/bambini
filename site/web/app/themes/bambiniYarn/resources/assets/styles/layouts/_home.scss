@@ -392,7 +392,7 @@
       }
     }
     .post-navigation {
-        background: rgba($brand-gray, 0.25);
+        //background: rgba($brand-gray, 0.25);
         padding: $base-padding * 2;
         @include screen(320px, 768px) {
           margin-bottom: $base-margin * 4;
@@ -410,9 +410,13 @@
           li {
             display: inline-block;
             width: 23%;
+            height: 15rem;
             vertical-align: top;
             text-align: center;
             margin-right: 2%;
+            //padding: $base-padding;
+            background-color: $brand-violet;
+            border-radius: 1rem;
             @include screen(320px, 567px) {
               width: 100%;
               display: block;
@@ -428,11 +432,13 @@
               margin-right: 0 !important;
             }
             div.related-image {
-              width: 150px;
+              width: 100%;
               height: 150px;
               margin: 0 auto $base-margin auto;
               position: relative;
               overflow: hidden;
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
               img {
                 width: 240%;
                 height: auto;
@@ -446,6 +452,7 @@
               }
             }
             a {
+              color: white;
             }
           }
         }
