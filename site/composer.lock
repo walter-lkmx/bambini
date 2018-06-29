@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "260f90b4f8f0a2b472785638950923e9",
+    "content-hash": "1c1f9df3a16290e55304a8d59706e442",
     "packages": [
         {
             "name": "bambini/open-pay-spec",
@@ -399,15 +399,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-woo-search",
-            "version": "1.42",
+            "version": "1.44",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/advanced-woo-search/",
-                "reference": "tags/1.42"
+                "reference": "tags/1.44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-woo-search.1.42.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-woo-search.1.44.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -478,16 +478,36 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
-            "name": "wpackagist-plugin/popup-maker",
-            "version": "1.7.28",
+            "name": "wpackagist-plugin/mailchimp-for-wp",
+            "version": "4.2.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/popup-maker/",
-                "reference": "tags/1.7.28"
+                "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
+                "reference": "tags/4.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.7.28.zip",
+                "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.4.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/popup-maker",
+            "version": "1.7.29",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/popup-maker/",
+                "reference": "tags/1.7.29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.7.29.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -619,15 +639,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "7.6.1",
+            "version": "7.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/7.6.1"
+                "reference": "tags/7.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
