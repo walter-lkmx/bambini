@@ -116,7 +116,7 @@
             display: block;
               margin-left: auto;
               margin-right: auto;
-              //padding: $base-padding 0; -- PANALERA
+              padding: $base-padding *2  0;
             @include screen(320px, 424px) {
               width: 50%;
               display: inline-block;
@@ -124,19 +124,19 @@
               top: 1rem;
               right: 0;
               text-align: center;
+              padding: 0;
             }
             img {
-              //height: 16rem; --PANALERA
-              height: 21rem;
+              height: 16rem;
               width: auto;
               display: block;
               margin-left: auto;
               margin-right: auto;
-// AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA CARRIOLA
+// AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA PANALERA
               @include screen(320px, 424px) {
                 top: 0;
                 right: 0;
-                //height: 7rem; --PANALERA
+                height: 7rem;
                 height: 9rem;
               }
               @include screen(425px, 549px) {
@@ -155,7 +155,7 @@
                 width: 10rem;
                 height: auto;
               }
-// FIN DE AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA CARRIOLA
+// FIN DE AJUSTES DE RESPONSIVIDAD PREDEFINIDAS SOLO PARA PANALERA
             }
           }
           h2, h3, h4 {
