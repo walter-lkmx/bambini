@@ -38,8 +38,8 @@
             <li><a href="https://www.instagram.com/bambini.club.store/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
         <ul class="address">
-        <li>Propiedad intelectual © 2007-2018 Conversiones.</li>
-        <li>Paseo Estrella del Mar #1075, Loc 1 A, 22500. Playas de Tijuana, Baja California, México.</li></ul>
+        <li>Propiedad intelectual © 2017 Digitiendas Maresi, S.A.P.I. de C.V.</li>
+        <li>Ave. Huitzilac #2225, Col. Morelos. CP 22056. Tijuana, Baja California, México.</li></ul>
     </div>
 </footer>
 
