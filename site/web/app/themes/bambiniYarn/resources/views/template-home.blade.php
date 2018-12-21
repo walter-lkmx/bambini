@@ -7,7 +7,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    <div class="welcome welk0mes">
+    <div class="welcome welk0mesx">
         <div class="container">
             @include('partials.slider')
             @include('partials.search-box')
