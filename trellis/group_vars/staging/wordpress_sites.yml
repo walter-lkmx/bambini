@@ -15,9 +15,7 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: true
-      provider: manual
-      cert: /root/ssl/bambini.club.crt
-      key: /root/ssl/bambini.club.key
+      enabled: false
+      provider: letsencrypt
     cache:
       enabled: false
